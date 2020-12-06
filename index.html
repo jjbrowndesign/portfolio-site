@@ -8,18 +8,18 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
 
- <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
 
- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
- <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
   <header>
     <div>
-      <img src="img/logos/jjbrowndesign_logo.png" alt="J J Brown Design logo">
+      <img src="img/logos/jjbrowndesign_logo.png" class="logo" alt="J J Brown Design logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -32,64 +32,64 @@
   </header>
 
   <main>
-    <div>
-      <!-- Hero section -->
-      <div>
+  <div>
+
+    <!-- Hero section -->
+    <div id="hero">
         <h1> Jeremy Brown has experience in both Print and UI Design, supplemented by a background in writing.
           <span>
           </span>
         </h1>
         <p> Currently looking for Edinburgh-based opportunities to create beautiful and effective UI/UX solutions for users. </p>
-
-      </div>
+    </div>
 
       <!-- Work section -->
+      <div id="work">
+
       <div>
-        <h2> My work </h2>
-        <div>
-          <!-- Project 1 -->
-
-          <div>
-            <!-- blue 1 -->
-            <picture>
-              <source srcset=img/home/home_mixtape@1x.jpg media="(max-width:767px)">
-              <img src=img/home/home_mixtape@2x.jpg alt="Mixtape app image" </picture>
-          </div>
-
-          <div>
-            <h3> Mixtape app </h3>
-            <p> A native app that allows users to build their ideal music playlist, based on mood, genre and more. It revolves around the idea of ‘creating a mix’, inspired by the mixtapes of the 80s.
-            </p>
-            <a href="mixtape.html">Read more</a>
-            <!-- button -->
-
-          </div>
-        </div>
+      <h2> My work </h2>
+        <!-- Project 1 -->
 
         <div>
-          <!-- Project 2 -->
+          <!-- blue 1 -->
+          <picture>
+            <source srcset=img/home/home_mixtape@1x.jpg media="(max-width:767px)">
+            <img src=img/home/home_mixtape@2x.jpg alt="Mixtape app image" </picture>
+</div>
+        <div>
+          <h3> Mixtape app </h3>
+          <p> A native app that allows users to build their ideal music playlist, based on mood, genre and more. It revolves around the idea of ‘creating a mix’, inspired by the mixtapes of the 80s.
+          </p>
+          <a href="mixtape.html" class="button">Read more</a>
+          <!-- button -->
 
-          <div>
-            <!-- blue 2 -->
-            <picture>
-              <source srcset=img/home/Home_Storm@1x.jpg media="(max-width:767px)">
-              <img src=img/home/Home_Storm@2x.jpg alt="Storm app image" </picture>
-          </div>
-
-          <div>
-            <h3> Storm app </h3>
-            <p> A native app - for both iOS and Android - that encourages users to join an eco energy provider and helps them to manage and monitor their electricity usage. It also allows users to join on the app and make payments instantly.
-            </p>
-            <a href="">Read more</a>
-            <!-- button -->
-
-          </div>
         </div>
+      </div>
 
+    </div>
+
+        <!-- Project 2 -->
+
+        <div>
+          <!-- blue 2 -->
+          <picture>
+            <source srcset=img/home/Home_Storm@1x.jpg media="(max-width:767px)">
+            <img src=img/home/Home_Storm@2x.jpg alt="Storm app image" </picture>
+</div>
+        <div>
+          <h3> Storm app </h3>
+          <p> A native app - for both iOS and Android - that encourages users to join an eco energy provider and helps them to manage and monitor their electricity usage. It also allows users to join on the app and make payments instantly.
+          </p>
+          <a href="storm.html" class="button">Read more</a>
+
+        <!-- button -->
+
+        </div>
       </div>
   </main>
 
   <footer id="contact">
+    <!-- Contact section -->
     <div>
       <h2>
         Get in touch
@@ -98,7 +98,7 @@
         If you’ve got a project in mind, Skype me at <a href="skype:insertskypehere">InsertSkypeHere</a> or drop me an email.
       </p>
       <div>
-        <a href="mailto:jbrown21@outlook.com">Email me</a>
+        <a href="mailto:jbrown21@outlook.com" class="button contact">Email me</a>
       </div>
       <div>
         <ul>
@@ -174,7 +174,8 @@
           </a>
         </ul>
       </div>
-      <p> Copyright Jeremy Brown 2020 </ </div>
+      <p> Copyright Jeremy Brown 2020 </p>
+      </div>
   </footer>
 </body>
 
