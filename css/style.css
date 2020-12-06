@@ -5,34 +5,119 @@ Teal - 66,116,117;
 Background - Light blue - 234,237,246;
 Background - Navy - 25,30,54;
 */
+img {
+  width: 100%;
+}
+
+svg {
+  width: 5%;
+}
+
+.logo {
+  width: 40%;
+}
 
 body {
-  background-color: #ffffff;
+  background-color: rgb(248, 249, 252);
   font-family: 'Overpass', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: rgb(25, 30, 54);
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.75em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1em;
   font-weight: 400;
 }
-h4 {
-  font-size: 1.35em;
+
+a {
+  color: rgb(66, 116, 117);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(66, 116, 117, 0.8);
+}
+
+a:hover {
+  color: rgba(66, 116, 117, 0.6);
+  text-decoration: underline;
+}
+
+a:focus {
+  color: rgba(66, 116, 117, 0.6);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgba(66, 116, 117, 0.9);
+}
+
+a.button {
+  display: inline-block;
+  background-color: rgb(66, 116, 117);
+  color: white;
   font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 10px solid #995c30 transition: 0.2s opacity;
+}
+
+.button:visited {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+a.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: rgb(66, 116, 117);
+  border: 2px solid rgb(66, 116, 117);
+}
+
+.button.contact:hover {
+  background-color: rgb(66, 116, 117);
+  color: rgb(248, 249, 252);
+}
+
+.button.contact:focus {
+  background-color: rgb(66, 116, 117);
+  color: rgb(248, 249, 252);
 }
