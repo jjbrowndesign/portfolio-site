@@ -5,20 +5,89 @@ Teal - 66,116,117;
 Background - Light blue - 234,237,246;
 Background - Navy - 25,30,54;
 */
-img {
-  width: 100%;
+
+* {
+  box-sizing: border-box;
 }
 
-svg {
-  width: 5%;
+img {
+  width:100%;
+  max-width:400px;
 }
 
 .logo {
-  width: 40%;
+  max-width:250px;
+}
+
+nav > ul {
+  list-style-type:none;
+  padding: 0px;
+  display:inline-block;
+  width:100%;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(66,116,117);
+}
+
+nav > ul > li > a:visited {
+  opacity:0.8;
+}
+
+nav > ul > li > a:hover {
+  color: rgb(25,30,54);
+}
+
+nav > ul > li > a:focus {
+  color: rgb(25,30,54);
+}
+
+nav > ul > li > a:active {
+  color: rgb(255;255;255);
+}
+
+.social {
+  max-width: 45px;
+}
+
+.socialrow {
+  text-align:center;
+}
+
+.row {
+  margin: 25px 0px;
+  /* 25px top and bottom, 0px left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgb(25,30,54);
+}
+
+header {
+  background-color: rgb(248,249,252);
+  text-align:center;
+  padding: 10px 0px;
+  position:fixed;
+  width:100%;
+-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+}
+
+main {
+  padding-top:126px;
 }
 
 body {
-  background-color: rgb(248, 249, 252);
+  background-color: rgb(255,255,255);
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -27,6 +96,26 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: rgb(25, 30, 54);
+}
+
+footer {
+  background-color: rgb(25,30,54);
+  color: rgb(248,249,252);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#hero {
+  background-color: rgb(66,116,117);
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+  color: rgb(248,249,252);
+}
+
+#hero h1 {
+text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -107,17 +196,23 @@ a.button:hover {
 }
 
 .button.contact {
-  background-color: transparent;
+  background-color: rgb(248,249,252);
   color: rgb(66, 116, 117);
   border: 2px solid rgb(66, 116, 117);
 }
 
 .button.contact:hover {
   background-color: rgb(66, 116, 117);
-  color: rgb(248, 249, 252);
+  color: rgb(248,249,252);
 }
 
 .button.contact:focus {
   background-color: rgb(66, 116, 117);
-  color: rgb(248, 249, 252);
+  color: rgb(248,249,252);
+}
+
+/* Layout styling */
+
+.container {
+padding: 0px 15px;
 }
