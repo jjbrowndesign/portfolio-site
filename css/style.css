@@ -5,52 +5,51 @@ Teal - 66,116,117;
 Background - Light blue - 234,237,246;
 Background - Navy - 25,30,54;
 */
-
 * {
   box-sizing: border-box;
 }
 
 img {
-  width:100%;
-  max-width:400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .logo {
-  max-width:250px;
+  max-width: 250px;
 }
 
-nav > ul {
-  list-style-type:none;
+nav>ul {
+  list-style-type: none;
   padding: 0px;
-  display:inline-block;
-  width:100%;
+  display: inline-block;
+  width: 100%;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0px 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(66,116,117);
+  color: rgb(66, 116, 117);
 }
 
-nav > ul > li > a:visited {
-  opacity:0.8;
+nav>ul>li>a:visited {
+  opacity: 0.8;
 }
 
-nav > ul > li > a:hover {
-  color: rgb(25,30,54);
+nav>ul>li>a:hover {
+  color: rgb(25, 30, 54);
 }
 
-nav > ul > li > a:focus {
-  color: rgb(25,30,54);
+nav>ul>li>a:focus {
+  color: rgb(25, 30, 54);
 }
 
-nav > ul > li > a:active {
-  color: rgb(255;255;255);
+nav>ul>li>a:active {
+  color: rgb(255; 255; 255);
 }
 
 .social {
@@ -58,7 +57,7 @@ nav > ul > li > a:active {
 }
 
 .socialrow {
-  text-align:center;
+  text-align: center;
 }
 
 .row {
@@ -68,26 +67,36 @@ nav > ul > li > a:active {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 2px solid rgb(25,30,54);
+  border-bottom: 2px solid rgb(25, 30, 54);
+}
+
+#mixtape .row {
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgb(25, 30, 54);
+}
+
+#about {
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgb(25, 30, 54);
 }
 
 header {
-  background-color: rgb(248,249,252);
-  text-align:center;
+  background-color: rgb(248, 249, 252);
+  text-align: center;
   padding: 10px 0px;
-  position:fixed;
-  width:100%;
--webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
--moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.2);
-box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
 }
 
 main {
-  padding-top:126px;
+  padding-top: 126px;
 }
 
 body {
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -98,24 +107,42 @@ body {
   color: rgb(25, 30, 54);
 }
 
+.teal-ul {
+  padding-left: 18px;
+  color: rgb(66, 116, 117);
+  font-style: italic;
+}
+
+#contact ul {
+  padding: 0px;
+}
+
+.about-ul {
+  padding-left: 20px;
+  color:rgb(66, 116, 117);
+}
+
 footer {
-  background-color: rgb(25,30,54);
-  color: rgb(248,249,252);
+  background-color: rgb(25, 30, 54);
+  color: rgb(248, 249, 252);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
 }
 
-#hero {
-  background-color: rgb(66,116,117);
-  padding: 20px 0px;
+.hero {
+  background-color: rgb(66, 116, 117);
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-block;
   width: 100%;
-  color: rgb(248,249,252);
+  color: rgb(248, 249, 252);
 }
 
-#hero h1 {
-text-align: center;
+.hero h1 {
+  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -196,23 +223,22 @@ a.button:hover {
 }
 
 .button.contact {
-  background-color: rgb(248,249,252);
+  background-color: rgb(248, 249, 252);
   color: rgb(66, 116, 117);
   border: 2px solid rgb(66, 116, 117);
 }
 
 .button.contact:hover {
   background-color: rgb(66, 116, 117);
-  color: rgb(248,249,252);
+  color: rgb(248, 249, 252);
 }
 
 .button.contact:focus {
   background-color: rgb(66, 116, 117);
-  color: rgb(248,249,252);
+  color: rgb(248, 249, 252);
 }
 
 /* Layout styling */
-
 .container {
-padding: 0px 15px;
+  padding: 0px 15px;
 }
