@@ -430,10 +430,6 @@ Medium devices (640px and larger)
     max-width: 300px;
   }
 
-#portfolio-mini {
-  max-width: 175px;
-  text-align: right;
-}
   .hero span {
     display: block;
   }
