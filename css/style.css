@@ -18,6 +18,13 @@ img {
   margin-top: 7px;
 }
 
+.hero-image {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0px;
@@ -50,8 +57,8 @@ nav>ul>li>a:active {
 .navtoggle li:not(:last-child) {
   display: none;
 }
-/* hides all except hamburger menu */
 
+/* hides all except hamburger menu */
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -68,20 +75,20 @@ nav>ul>li>a:active {
   padding: 10px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 .social {
   max-width: 45px;
   max-height: 45px;
-margin-left: 10px;
-margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .row {
@@ -379,7 +386,7 @@ Medium devices (640px and larger)
     margin-top: 0px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -388,12 +395,12 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   main {
     padding-top: 90px;
@@ -403,18 +410,30 @@ Medium devices (640px and larger)
     font-size: 16px;
   }
 
-    img {
-      width: 90%;
-      max-width: 300px;
-      padding-top: 20px;
-    }
+  img {
+    width: 90%;
+    max-width: 300px;
+    padding-top: 20px;
+  }
 
-    .portfolio {
-      padding-left: 30px;
-      width: 90%;
-      max-width: 300px;
-    }
+  .hero-images {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 50%;
+  }
 
+  .portfolio {
+    padding-left: 30px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+#portfolio-mini {
+  max-width: 175px;
+  text-align: right;
+}
   .hero span {
     display: block;
   }
@@ -449,7 +468,6 @@ Medium devices (640px and larger)
     margin-right: auto;
     padding: 0px 15px;
   }
-
 }
 
 /* ==============================
@@ -470,16 +488,24 @@ Large devices (1024px or larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   img {
     width: 100%;
     max-width: 400px;
+  }
+
+  .hero-image {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%
   }
 
   #jb {
@@ -503,7 +529,6 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
   .logo {
     max-width: 350px;
     padding-top: 15px;
@@ -514,17 +539,17 @@ X-large devices (1440px or larger)
     display: inline-block;
   }
 
-main {
+  main {
     padding-top: 116px;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   body {
     font-size: 22px;
