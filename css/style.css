@@ -3,8 +3,9 @@ Colours used:
 Upper bar - Very pale blue - 248,249,252; #f8f9fc;
 Teal - 66,116,117; #427475;
 Background - Light blue - 234,237,246; #eaedf6;
-Background - Navy - 25,30,54;
+Background - Navy - 25,30,54; #191f36;
 */
+
 * {
   box-sizing: border-box;
 }
@@ -18,33 +19,33 @@ img {
   margin-top: 7px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: rgb(66, 116, 117);
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   opacity: 0.8;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   color: rgb(25, 30, 54);
 }
 
-nav>ul>li>a:focus {
+nav > ul > li > a:focus {
   color: rgb(25, 30, 54);
 }
 
-nav>ul>li>a:active {
-  color: rgb(255, 255, 255);
+nav > ul > li > a:active {
+  color: rgb(25, 30, 54);
 }
 
 .navtoggle li:not(:last-child) {
@@ -71,7 +72,7 @@ nav>ul>li>a:active {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
 .navtoggle.responsive li:last-child {
@@ -87,7 +88,8 @@ nav>ul>li>a:active {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0px left and right */
+
+  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -112,7 +114,7 @@ nav>ul>li>a:active {
 }
 
 header {
-  background-color: rgb(248, 249, 252);
+  background-color: rgb(250, 250, 250);
   padding: 10px 0 4px;
   position: fixed;
   width: 100%;
@@ -123,17 +125,21 @@ header {
 
 main {
   padding-top: 53px;
+
   /* Was 127px before nav menu changes 23.01.21 */
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(248, 249, 252);
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
   color: rgb(25, 30, 54);
 }
@@ -167,10 +173,17 @@ footer {
 
 .hero {
   background-color: rgb(66, 116, 117);
-  padding: 20px 30px 30px;
-  display: inline-block;
+  padding: 20px;
   width: 100%;
   color: rgb(248, 249, 252);
+  text-align: center;
+}
+
+.hero-text {
+  width: 90%;
+  max-width: 480px;
+  background-color: rgb(66, 116, 117);
+  display: inline-block;
   text-align: center;
 }
 
@@ -197,23 +210,25 @@ h4 {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h3 {
   font-size: 1.2em;
   font-weight: 700;
+  color: rgb(25, 30, 54);
 }
 
 h4 {
   font-size: 1em;
   font-weight: 400;
+  color: rgb(25, 30, 54);
 }
 
 a {
@@ -227,12 +242,10 @@ a:visited {
 
 a:hover {
   color: rgba(66, 116, 117, 0.6);
-  text-decoration: underline;
 }
 
 a:focus {
   color: rgba(66, 116, 117, 0.6);
-  text-decoration: underline;
 }
 
 a:active {
@@ -394,12 +407,21 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -418,6 +440,10 @@ Medium devices (640px and larger)
     font-size: 16px;
   }
 
+  .mixtape-hero-body-text {
+    max-width: 690px;
+  }
+
   img {
     width: 90%;
     max-width: 275px;
@@ -427,6 +453,11 @@ Medium devices (640px and larger)
   .hero {
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  .hero-text {
+    max-width: 700px;
   }
 
   .portfolio {
@@ -484,8 +515,17 @@ Large devices (1024px or larger)
     padding-top: 7px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -504,6 +544,11 @@ Large devices (1024px or larger)
   .hero {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 800px;
   }
 
   #jb {
@@ -533,12 +578,21 @@ X-large devices (1400px or larger)
     margin-top: 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
   main {
     padding-top: 116px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding-top: 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -550,7 +604,7 @@ X-large devices (1400px or larger)
   }
 
   body {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   img {
@@ -561,6 +615,11 @@ X-large devices (1400px or larger)
   .hero {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 1200px;
   }
 
   .hero-img {
