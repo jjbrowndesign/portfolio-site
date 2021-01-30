@@ -440,10 +440,6 @@ Medium devices (640px and larger)
     font-size: 16px;
   }
 
-  .mixtape-hero-body-text {
-    max-width: 690px;
-  }
-
   img {
     width: 90%;
     max-width: 275px;
