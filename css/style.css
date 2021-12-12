@@ -139,8 +139,7 @@ header {
 }
 
 main {
-  /* 'padding' changed from 53px to 83px on 12.12.21 to make space for banner */
-  padding-top: 83px;
+  padding-top: 53px;
 
   /* Was 127px before nav menu changes 23.01.21 */
 }
@@ -342,10 +341,7 @@ a.button:hover {
 }
 
 #banner {
-  position: absolute;
   text-align: center;
-  top: 0;
-  left: 0;
   background-color: rgb(234, 252, 252);
   width: 100%;
   height: 30px;
@@ -354,16 +350,14 @@ a.button:hover {
 #banner-content {
   width: 500px;
   margin: 0 auto;
-  padding-top: 5px;
+  padding-top: 8px;
   font-size: 0.8em;
 }
 
 /* Layout styling */
-/* 'padding-top: 30px' added on 12.12.21 to make space for banner */
 
 .container {
   padding: 0 15px;
-  padding-top: 30px;
 }
 
 
@@ -372,8 +366,7 @@ Medium devices (640px or larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    /* 'padding' changed from 20px to 50px on 12.12.21 to make space for banner */
-      padding: 50px 0 13px;
+      padding: 20px 0 13px;
     }
 
   nav {
@@ -428,8 +421,7 @@ Medium devices (640px or larger)
   }
 
     main {
-      /* 'padding' changed from 90px to 120px on 12.12.21 to make space for banner */
-    padding-top: 120px;
+    padding-top: 90px;
   }
 
   .logo {
@@ -626,7 +618,6 @@ X-large devices (1400px or larger)
   }
 
   main {
-    /* 'padding' changed from 116px to 146px on 12.12.21 to make space for banner */
     padding-top: 116px;
   }
 
@@ -706,8 +697,7 @@ X-large devices (1400px or larger)
   }
 
   main {
-    /* 'padding' changed from 116px to 146px on 12.12.21 to make space for banner */
-    padding-top: 146px;
+    padding-top: 116px;
   }
 
   .navtoggle.responsive nav {
