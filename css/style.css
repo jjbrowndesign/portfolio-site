@@ -60,6 +60,7 @@ nav > ul > li > a.button-nav {
   background-color: rgb(66, 116, 117);
   border: none;
   color: white;
+  padding-top: 10px;
   padding: 7px 25px;
   text-align: center;
   text-decoration: none;
@@ -139,9 +140,10 @@ header {
 }
 
 main {
-  padding-top: 53px;
-
+  padding-top: 43px;
   /* Was 127px before nav menu changes 23.01.21 */
+  /* Changed from 53px to 43px when banner added 12.12.21 */
+
 }
 
 body {
@@ -603,6 +605,11 @@ Large devices (1024px or larger)
   }
 }
 
+  main {
+    padding-top: 100px;
+    /* Added when banner added 12.12.21 */
+  }
+
 
 /* ==============================
 X-large devices (1400px or larger)
@@ -618,7 +625,9 @@ X-large devices (1400px or larger)
   }
 
   main {
-    padding-top: 116px;
+    padding-top: 126px;
+    /* Changed from 116px to 126px when banner added 12.12.21 */
+
   }
 
   .navtoggle.responsive nav {
@@ -697,7 +706,8 @@ X-large devices (1400px or larger)
   }
 
   main {
-    padding-top: 116px;
+    padding-top: 126px;
+    /* Changed from 116px to 126px when banner added 12.12.21 */
   }
 
   .navtoggle.responsive nav {
