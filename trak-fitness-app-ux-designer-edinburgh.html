@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Redesigning a newspaper</title>
+  <title>Trak fitness running app UX design</title>
   <link href="img/logos/favicon.ico" rel="shortcut icon">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
@@ -20,6 +20,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="UX design case study for a responsive fitness app that allows users to find the perfect running route, including user research, wireframes and prototypes. Learn more.">
+
   <script src="https://kit.fontawesome.com/db5ab4ae02.js" crossorigin="anonymous"></script>
 
 </head>
@@ -30,16 +32,16 @@
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
 
-        <a href="index.html">
+        <a href="designer-edinburgh.html">
           <img class="logo" src="img/logos/jeremybrown_logo.svg" alt="J J Brown Design logo">
         </a>
 
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ux-design.html">UX Design</a></li>
-            <li><a class="current-nav" href="print-design.html">Print Design</a></li>
-            <li><a class="button-nav" href="contact.html">Get in Touch</a></li>
+            <li><a href="designer-edinburgh.html">Home</a></li>
+            <li><a class="current-nav" href="ux-designer-edinburgh.html">UX Design</a></li>
+            <li><a href="print-designer-edinburgh.html">Print Design</a></li>
+            <li><a class="button-nav" href="contact-designer-edinburgh.html">Get in Touch</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -57,14 +59,17 @@
 
       <!-- Hero section -->
       <div class="hero">
-        <h1><i>Exeposé</i> newspaper
-          <span>
-          </span>
-        </h1>
+            <h1>UX Design<h1>
+              <h2><i>Trak running app</h2>
         <div class="hero-text">
-          <p>In 2016, I spent most of my summer redesigning the student newspaper, in my role of Editor. My redesign was inspired by research into other student newspapers, including the University of Cambridge’s <i><a href="https://issuu.com/varsity" target="_blank">Varsity</a></i> and the University of York’s <i><a href="https://nouse.co.uk/editions/" target="_blank">Nouse</a></i>.</p>
-          <p>The feedback from readers was exactly as I’d hoped: more sophisticated, more modern, and more creative.</p>
+        <p>A responsive web app that allows users to find the perfect running route, based on a series of options.</p>
       </div>
+        <div>
+            <img class="hero-img" src=img/ux_design/trak_app/0_mockups/trak_mockups_1@2x.jpg alt="Join in minutes">
+            <img class="hero-img" src=img/ux_design/trak_app/0_mockups/trak_mockups_2@2x.jpg alt="Track your usage">
+            <img class="hero-img" src=img/ux_design/trak_app/0_mockups/trak_mockups_3@2x.jpg alt="Make payments instantly">
+            <img class="hero-img" src=img/ux_design/trak_app/0_mockups/trak_mockups_4@2x.jpg alt="For both Android and iPhone">
+        </div>
       </div>
 
 
@@ -78,69 +83,101 @@
 
         <!-- Part 1 -->
         <div class="row">
-          <div>
-            <h1 class="h1-teal">Refreshing the brand</h1>
-            <p>We chose a new logo (including seasonal variations!) and pulled the front page design closer to a mass-market newspaper, improving clarity and accessibility.</p>
+          <div class="col-md-6 col-lg-6">
+
+            <h1 class="h1-teal">1.  User Personas</h1>
+
+          <p class="key-points">Conducting a competitor analysis</p>
+          <p class="key-points">Interviewing potential users</p>
+          <p class="key-points">Creating user personas</p>
+
+            <p>
+              After collecting insights from potential users, I concluded the app should appeal to entry-level runners who want to find an enjoyable route locally but are uncomfortable with the seriousness or competitiveness of Strava.
+    </p>
+    <p>
+  However, I learnt it would also be valuable for serious runners who are looking for a challenging new route and want to assess the statistics in depth.
+            </p>
           </div>
           <div>
-            <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_cover_old@2x.jpg alt="The old, cluttered front page">
-            <h1 class="h1-teal-mobile-only">☟</h1>
-              <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_cover_new@2x.jpg alt="The new, redesigned front page">
-          </div>
-          <div>
-            <img class="before-after-img-desktop" src=img/print_design/exepose/exepose_cover_both@2x.png alt="Both covers compared">
+              <img class="portfolio" src=img/ux_design/trak_app/1_personas/trak_personas_2@2x.jpg alt="Sofie's user persona">
           </div>
         </div>
 
         <!-- Part 2 -->
         <div class="row">
-          <div>
-            <h1 class="h1-teal">A splash of colour</h1>
-          <p>The ubiquitous grey boxes were some of the first elements to go, to be replaced by the clear section colour palettes and stylish fonts.</p>
-          </div>
-          <div>
+          <div class="col-md-6 col-lg-6">
 
-            <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_banner_old@2x.jpg alt="The ugly grey boxes">
-<h1 class="h1-teal-mobile-only">☟</h1>
-              <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_banner_new@2x.jpg alt="The new colour-coding">
-          </div>
+            <h1 class="h1-teal">2. User Flow Diagrams</h1>
+
+          <p class="key-points">Writing Jobs To Be Done</p>
+          <p class="key-points">Sketching User Flows</p>
+          <p class="key-points">Finalising a User Flow Diagram</p>
+
+            <p>
+              My ‘Jobs To Be Done’ list focused primarily on the options that were offered on the Plan a Route screen: distance/time, elevation, terrain type, and so on.</p>
+  <p>
+              I focused on the Plan a Route functionality of the app as a priority, but also sketched out some social possibilities that could be further developed in future iterations of the app.  </p>
+            </div>
           <div>
-            <img class="before-after-img-desktop-full" src=img/print_design/exepose/exepose_banner_both@2x.png alt="Improving the banners">
+              <img class="portfolio" src=img/ux_design/trak_app/2_user_flow/trak_user_flow_1@2x.jpg alt="User Flow Diagram">
           </div>
         </div>
 
         <!-- Part 3 -->
         <div class="row">
-          <div>
-            <h1 class="h1-teal">Freedom to create</h1>
-          <p>As part of the redesign process, I brought the arts and culture sections together into a more creative and vibrant feature section called ‘Exhibit’. The idea was to make it similar to a culture pullout in a national newspaper, and to encourage writers to cross-pollinate between these similar sections.</p>
+          <div class="col-md-6 col-lg-6">
+
+            <h1 class="h1-teal">3. Prototype testing</h1>
+
+          <p class="key-points">Building a prototype on InVision</p>
+          <p class="key-points">Conducting usability testing</p>
+          <p class="key-points">Analysing the results</p>
+
+            <p>
+              After some rapid Crazy 8s sketching, I drew a low-fidelity wireframe, and then developed a higher-fidelity version for prototype testing online.
+
+  I wouldn’t always show so much detail in an early prototype, but in this case it felt as though the app had enough intricacies that it would benefit from showing more of the offerings.</p>
           </div>
           <div>
-            <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_lifestyle_new@2x.jpg alt="Lifestype section">
-            <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_music_new@2x.jpg alt="Music section">
-            <img class="before-after-img-mobile-disappearing" src=img/print_design/exepose/exepose_arts_new@2x.jpg alt="Arts section">
+              <img class="portfolio" src=img/ux_design/trak_app/3_prototype/trak_prototype_1@2x.jpg alt="Testing the prototype">
           </div>
+        </div>
 
-          <img class="before-after-img-desktop-full" src=img/print_design/exepose/exepose_exhibit_pages@2x.png alt="Some colourful Exhibit pages">
+        <!-- Part 4 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
 
+            <h1 class="h1-teal">4. Style guide</h1>
+
+          <p class="key-points">Producing a Style Guide</p>
+          <p class="key-points">Constructing a brand identity</p>
+          <p class="key-points">Designing imagery and icons</p>
+
+            <p>
+              The idea of a gradient showing areas of high and low pace was very popular in the usability testing, so this became a key aspect of the app.
+              Although a traffic light system might be more recognisable, I thought it would be likely to clash with the brand identity. Instead, I developed a teal-turquoise gradient that looked stylish and also felt suitably related to health and fitness.</p>
+
+            </p>
+          </div>
+          <div>
+              <img class="portfolio" src=img/ux_design/trak_app/4_style_guide/trak_style_guide_1@2x.jpg alt="Trak Style Guide page 1 - colours">
+          </div>
         </div>
 
 
-                <!-- Part 4 -->
-                <div class="row">
-                  <div>
-                    <h1 class="h1-teal">White space</h1>
-                  <p>It wasn't just the arts and culture section to get a redesign. In the Features sections, clunky bold headlines were thrown away, and a new appreciation for white space was added.</p>
-                  </div>
-                  <div>
-                    <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_science_old@2x.jpg alt="The old Science section">
-                    <h1 class="h1-teal-mobile-only">☟</h1>
-                      <img class="before-after-img-mobile" src=img/print_design/exepose/exepose_science_new@2x.jpg alt="The new Science section">
-                  </div>
-                  <div>
-                    <img class="before-after-img-desktop" src=img/print_design/exepose/exepose_science_both@2x.png alt="Old vs new Science section">
-                  </div>
-                </div>
+        <!-- Part 5 -->
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+
+            <h1 class="h1-teal">5. Final product</h1>
+
+            <p>
+The final product consisted of about 25-30 screens, plus various assets including icons and images. I also set up an interactive prototype to  show how the screens all link together.</p>          </div>
+          <div>
+              <img class="portfolio" src=img/ux_design/trak_app/6_final/trak_final_1@2x.jpg alt="Final project">
+          </div>
+        </div>
+
 
       </div>
   </main>
