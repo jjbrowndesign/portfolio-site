@@ -68,8 +68,6 @@ nav > ul > li > a.button-nav {
   padding-right: 20px;
   text-align: center;
   text-decoration: none;
-  transition-duration: 0.2s;
-  transition-property: opacity;
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
@@ -139,16 +137,18 @@ nav > ul > li > a.button-nav:hover {
 
 .index-gallery-img-link {
   margin-top: 5px;
-  transition-duration: 0.2s;
-  transition-property: opacity;
   transition: all 0.3s ease 0s;
 cursor: pointer;
 }
 
+.index-gallery-img-link:hover {
+  color: rgb(66, 116, 117);
+  transform: translateY(-3px);
+  box-shadow: 0px 15px 20px rgba(66, 116, 117, 0.4);
+}
+
 .gallery-img-link {
   margin-top: 20px;
-  transition-duration: 0.2s;
-  transition-property: opacity;
   transition: all 0.3s ease 0s;
 cursor: pointer;
 }
@@ -259,6 +259,20 @@ footer {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#before-after-img-desktop {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+
+#before-after-img-mobile {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block
 }
 
 .before-after-img-desktop {
@@ -401,10 +415,7 @@ a.button {
   padding-right: 15px;
   border-radius: 50px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
-  transition-duration: 0.2s;
-  transition-property: opacity;
   transition: all 0.3s ease 0s;
-cursor: pointer;
 }
 
 .button:visited {
@@ -520,7 +531,6 @@ Medium devices (680px or larger)
       display: block;
     }
 
-
     .before-after-img-mobile {
       width: 100%;
       padding-top: 20px;
@@ -532,6 +542,21 @@ Medium devices (680px or larger)
       width: 100%;
       padding-top: 20px;
       max-width: 1440px;
+      display: none;
+    }
+
+    #before-after-img-desktop {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: inline;
+      max-width: 600px;
+    }
+
+    #before-after-img-mobile {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
       display: none;
     }
 
