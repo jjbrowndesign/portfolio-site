@@ -1,7 +1,7 @@
 /*
 Colours used:
 Background - Light blue - 248, 249, 252;
-Nav bar - Navy - 25,30,54; #191f36;
+Nav bar - Navy - 25,30,54   /   Nav bar - 23,31,52
 Accent colour - Teal - 66,116,117; #427475;
 */
 
@@ -120,6 +120,8 @@ nav > ul > li > a.button-nav:hover {
 #invisible {
   color: rgb(248,249,252);
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .social {
@@ -129,6 +131,27 @@ nav > ul > li > a.button-nav:hover {
   margin-right: 10px;
 }
 
+.gallery-column-6 {
+  padding-bottom: 5px;
+}
+
+.col-md-3 {
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+.col-md-3 #last-child-h1-teal {
+  padding-top: 30px;
+}
+
+#space-after-text {
+  padding-bottom: 30px;
+}
+
+#space-after-text-last-child {
+  padding-bottom: 30px;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -136,7 +159,6 @@ nav > ul > li > a.button-nav:hover {
 }
 
 .index-gallery-img-link {
-  margin-top: 5px;
   transition: all 0.3s ease 0s;
 cursor: pointer;
 }
@@ -159,30 +181,59 @@ cursor: pointer;
   box-shadow: 0px 15px 20px rgba(66, 116, 117, 0.4);
 }
 
-#portfolio-gallery .row {
+#project-highlights .row {
   padding-bottom: 25px;
-  border-bottom: 2px solid rgba(25, 30, 54, 0.05);
+  border-bottom: 2px solid rgba(23, 31, 52, 0.05);
+}
+
+#last-child-row {
+  margin-bottom: 40px;
 }
 
 #about {
   padding-bottom: 25px;
-  border-bottom: 2px solid rgb(25, 30, 54);
+  border-bottom: 2px solid rgb(23, 31, 52);
 }
 
 header {
-  background-color: rgb(23, 31, 52);
   padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
   box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
+  background-image: url(https://jjbrowndesign.uk/img/home/ffflux3.svg);
+  background-size: 200%;
+  animation: header-animation 3s infinite alternate;
+  background-color: rgb(23, 31, 52);
+}
+
+/*
+OLD HEADER CONTENT:
+background-color: rgb(23, 31, 52);
+padding: 10px 0 4px;
+position: fixed;
+width: 100%;
+-webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
+-moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
+box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
+*/
+
+@keyframes header-animation {
+  0% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
 }
 
 main {
-  padding-top: 43px;
+  padding-top: 53px;
   /* Was 127px before nav menu changes 23.01.21 */
   /* Changed from 53px to 43px when banner added 12.12.21 */
+  /* Changed back to 53px 25.01.22 */
 
 }
 
@@ -195,7 +246,13 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: rgb(25, 30, 54);
+  color: rgb(23, 31, 52);
+}
+
+.body-white {
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding-top: 1px;
 }
 
 ul {
@@ -216,7 +273,7 @@ ul {
   color: rgb(0, 0, 0);
   font-size: 1em;
   font-weight: 600;
-  line-height: 0.8;
+  line-height: 1;
 }
 
 .about-ul {
@@ -225,7 +282,11 @@ ul {
 }
 
 footer {
-  background-color: rgb(25, 30, 54);
+  background-color: rgb(23, 31, 52);
+  background-image: url(https://jjbrowndesign.uk/img/home/ffflux3.svg);
+  background-size: 200%;
+  animation: header-animation 4s infinite alternate;
+  background-color: rgb(23, 31, 52);
   color: rgb(248, 249, 252);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -233,17 +294,25 @@ footer {
   width: 100%;
 }
 
+#footer-content {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 .hero {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   width: 100%;
-  color: rgb(25, 30, 54);
+  color: rgb(23, 31, 52);
   text-align: center;
 }
 
 .section-title {
   background-color: rgb(23, 31, 52);
-  padding: 10px;
+  background-image: url(https://jjbrowndesign.uk/img/home/ffflux3.svg);
+  background-size: 200%;
+  animation: header-animation 3s infinite alternate;
+  padding: 5px;
   width: 100%;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -355,7 +424,6 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: 700;
-  padding-top: 10px;
 }
 
 h3 {
@@ -365,15 +433,15 @@ h3 {
 
 .h3-gallery {
   margin-top: 10px;
-  margin-bottom: 30px;
-  color: rgb(25, 30, 54);
+  margin-bottom: 20px;
+  color: rgb(23, 31, 52);
 }
 
 
 h4 {
   font-size: 1em;
   font-weight: 400;
-  color: rgb(25, 30, 54);
+  color: rgb(23, 31, 52);
 }
 
 p.pre-footer {
@@ -383,6 +451,14 @@ p.pre-footer {
 a {
   color: rgb(66, 116, 117);
   text-decoration: none;
+}
+
+p > a {
+  text-decoration: underline;
+}
+
+h2 > a {
+  text-decoration: underline;
 }
 
 a:visited {
@@ -411,8 +487,8 @@ a.button {
   letter-spacing: .05rem;
   padding-bottom: 8px;
   padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 50px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease 0s;
@@ -500,6 +576,10 @@ Medium devices (680px or larger)
       padding: 20px 0 13px;
     }
 
+    .h1-teal {
+      margin-top: 25px;
+    }
+
     .h1-teal-mobile-only {
       font-size: 1.8em;
       font-style: italic;
@@ -514,9 +594,31 @@ Medium devices (680px or larger)
 
     .h3-gallery {
       margin-top: 10px;
-      margin-bottom: 15px;
-      color: rgb(25, 30, 54);
+      margin-bottom: 10px;
+      color: rgb(23, 31, 52);
     }
+
+        .col-lg-3 {
+          width: 40%;
+          padding-bottom: 0px;
+        }
+
+        .col-lg-3 #last-child-h1-teal {
+          padding-top: 0px;
+        }
+
+        #space-after-text {
+          padding-bottom: 0px;
+        }
+
+        #space-after-text-last-child {
+          padding-bottom: 20px;
+        }
+
+.index-gallery-img-link {
+  margin-top: 5px;
+}
+
 
     .before-after-img-desktop {
       width:100%;
@@ -663,7 +765,7 @@ Medium devices (680px or larger)
 }
 
   #jb {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   [class*="col-"] {
@@ -676,10 +778,6 @@ Medium devices (680px or larger)
     width: 50%;
     padding-bottom: 10px;
   }
-
-    .col-md-6:last-child {
-      padding-bottom: 40px;
-    }
 
   .row::after {
   content: "";
@@ -694,8 +792,9 @@ Medium devices (680px or larger)
     padding: 0 15px;
     width: 50%;
     float: left;
+    padding-top: 30px;
     padding-right: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
   }
 
   /* Layout styling */
@@ -835,16 +934,11 @@ Large devices (1024px or larger)
     padding-bottom: 0px;
   }
 
-  .gallery-column-6 {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-    width: 50%;
-    float: left;
-    padding-right: 30px;
-    padding-bottom: 25px;
-  }
+  main {
+      padding-top: 100px;
+    }
+    /*  Added at 100px when banner added 12.12.21
+        Kept when banner removed 25.01.22 */
 
   /* Layout styling */
   .container {
@@ -854,11 +948,6 @@ Large devices (1024px or larger)
     padding: 0 15px;
   }
 }
-
-  main {
-    padding-top: 100px;
-    /* Added when banner added 12.12.21 */
-  }
 
 
 /* ==============================
@@ -882,8 +971,9 @@ X-large devices (1400px or larger)
   }
 
   main {
-    padding-top: 126px;
+    padding-top: 116px;
     /* Changed from 116px to 126px when banner added 12.12.21 */
+    /* Changed back to 116px when banner removed 25.01.22 */
 
   }
 
@@ -963,8 +1053,9 @@ X-large devices (1400px or larger)
   }
 
   main {
-    padding-top: 126px;
+    padding-top: 116px;
     /* Changed from 116px to 126px when banner added 12.12.21 */
+    /* Changed back to 116px when banner removed 25.01.22 */
   }
 
   .navtoggle.responsive nav {
