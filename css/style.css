@@ -203,7 +203,7 @@ header {
   -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
   box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
   background-image: url(https://jjbrowndesign.uk/img/home/ffflux3.svg);
-  background-size: 200%;
+  background-size: 100%;
   animation: header-animation 3s infinite alternate;
   background-color: rgb(23, 31, 52);
 }
@@ -574,6 +574,7 @@ Medium devices (680px or larger)
 @media only screen and (min-width: 680px) {
   header {
       padding: 20px 0 13px;
+      background-size: 200%;
     }
 
     .h1-teal {
