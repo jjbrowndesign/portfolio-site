@@ -70,7 +70,6 @@ nav > ul > li > a.button-nav {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: .05rem;
   border-radius: 30px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
@@ -301,7 +300,7 @@ footer {
 
 .hero {
   background-color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 72px;
   width: 100%;
   color: rgb(23, 31, 52);
   text-align: center;
@@ -401,21 +400,20 @@ h1 {
 
 .h2-teal {
   font-size: 1.8em;
-  font-style: italic;
   line-height: 1.4;
   font-weight: 300;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
   color: rgb(66, 116, 117);
 }
 
 .h2-teal-mobile-only {
   font-size: 1.8em;
-  font-style: italic;
   line-height: 1.4;
   font-weight: 300;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: rgb(66, 116, 117);
   display: block;
   text-align: center;
@@ -429,6 +427,9 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-top: 8px;
 }
 
 .h3-gallery {
@@ -442,6 +443,14 @@ h4 {
   font-size: 1em;
   font-weight: 400;
   color: rgb(23, 31, 52);
+}
+
+p {
+  display: block;
+margin-block-start: 0em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
 }
 
 p.pre-footer {
@@ -481,9 +490,7 @@ a.button {
   display: inline-block;
   background-color: rgb(66, 116, 117);
   color: white;
-  font-size: 0.8em;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: .05rem;
   padding-bottom: 8px;
   padding-top: 10px;
@@ -494,9 +501,47 @@ a.button {
   transition: all 0.3s ease 0s;
 }
 
-.button:visited {
+a.button2 {
+  display: inline-block;
+  background-color: rgb(234, 237, 246);
+  color: rgb(66, 116, 117);
+  font-weight: 400;
+  letter-spacing: .05rem;
+  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px rgba(66, 116, 117, 0.4);
+  transition: all 0.3s ease 0s;
+}
+
+.button2:visited {
   opacity: 0.9;
   text-decoration: none;
+}
+
+.button2:hover {
+  background-color: white;
+  border: none;
+  color: rgb(66, 116, 117);
+  transform: translateY(-3px);
+  box-shadow: 0px 15px 20px rgba(66, 116, 117, 0.4);
+}
+
+.button2:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button2:visited {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.button2:active {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .button:hover {
@@ -515,14 +560,6 @@ a.button {
 .button:active {
   opacity: 0.8;
   text-decoration: underline;
-}
-
-.button.contact {
-  background-color: rgb(248, 249, 252);
-  color: rgb(66, 116, 117);
-  border: 2px solid rgb(66, 116, 117);
-  transition-duration: 0.2s;
-  transition-property: opacity;
 }
 
 .button.contact:hover {
@@ -578,12 +615,11 @@ Medium devices (680px or larger)
     }
 
     .h2-teal {
-      margin-top: 25px;
+      margin-top: 40px;
     }
 
     .h2-teal-mobile-only {
       font-size: 1.8em;
-      font-style: italic;
       line-height: 1.4;
       font-weight: 300;
       margin-top: 20px;
@@ -699,9 +735,7 @@ Medium devices (680px or larger)
   padding-right: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 0.8em;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: .05rem;
   border-radius: 30px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
@@ -748,7 +782,6 @@ Medium devices (680px or larger)
   .hero {
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 30px;
   }
 
   .hero-img {
@@ -827,9 +860,7 @@ Breakpoint for nav menu to fit in full - NAV ONLY (740px or larger)
     padding-right: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 0.8em;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: .05rem;
     border-radius: 30px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
