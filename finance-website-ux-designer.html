@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Trak fitness running app UX design</title>
+  <title>Mixtape music app UX design</title>
 
-  <link rel="canonical" href="http://jjbrowndesign.uk/trak-fitness-app-ux-designer-edinburgh" />
+  <link rel="canonical" href="http://jjbrowndesign.uk/mixtape-music-app-ux-designer" />
 
   <link href="img/logos/favicon.ico" rel="shortcut icon">
 
@@ -33,7 +33,7 @@
     gtag('config', 'G-K7WVHH5LJ2');
   </script>
 
-  <meta name="description" content="UX design case study for a responsive fitness app that allows users to find the perfect running route, including user research, wireframes and prototypes. Learn more.">
+  <meta name="description" content="UX design case study for a music player app that allows users to that allows users to build their ideal music playlist, based on mood, genre and more. Featuring wireframes and prototypes. Learn more.">
 
   <script src="https://kit.fontawesome.com/db5ab4ae02.js" crossorigin="anonymous"></script>
 
@@ -55,8 +55,8 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a class="current-nav" href="ux-designer-edinburgh.html">UX Design</a></li>
-            <li><a href="contact-designer-edinburgh.html">Get in touch</a></li>
+            <li><a class="current-nav" href="ux-designer.html">UX Design</a></li>
+            <li><a href="contact-ux-designer.html">Get in touch</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -66,19 +66,20 @@
 
   <main>
 
+
       <!-- Hero section -->
       <div class="hero">
-            <h1>UX Design<h1>
-              <h2><i>Trak running app</i></h2>
+          <h1>UX Design<h1>
+            <h2>Mixtape music app</h2>
         <div class="hero-text">
-        <p>A responsive web app that allows users to find the perfect running route, based on a series of options.</p>
+        <p>A native app that allows users to build their ideal music playlist, based on mood, genre and more. It revolves around the idea of ‘creating a mix’, inspired by the mixtapes of the 80s. </p>
       </div>
+
         <div>
-            <img class="hero-img" id="before-after-img-desktop" src=img/ux_design/trak_app/0_mockups/trak_mockups_all@2x.png alt="Mockups of the Trak fitness app">
-            <img class="hero-img" id="before-after-img-mobile" src=img/ux_design/trak_app/0_mockups/trak_mockups_1@2x.jpg alt="Track your routes">
-            <img class="hero-img" id="before-after-img-mobile" src=img/ux_design/trak_app/0_mockups/trak_mockups_2@2x.jpg alt="Find routes">
-            <img class="hero-img" id="before-after-img-mobile" src=img/ux_design/trak_app/0_mockups/trak_mockups_3@2x.jpg alt="Compare routes">
-            <img class="hero-img" id="before-after-img-mobile" src=img/ux_design/trak_app/0_mockups/trak_mockups_4@2x.jpg alt="And share routes">
+          <picture>
+            <source srcset=img/ux_design/mixtape_app/0_mockups/mixtape_mockup2@1x.jpg media="(max-width:767px)">
+            <img id="single-hero-img" class="hero-img" src=img/ux_design/mixtape_app/0_mockups/mixtape_mockup2@2x.jpg alt="Mixtape app playing music">
+          </picture>
         </div>
       </div>
 
@@ -95,21 +96,21 @@
         <div class="row">
           <div class="col-md-6 col-lg-6">
 
-            <h2 class="h2-teal">1.  User Personas</h2>
+            <h2 class="h2-teal">1. Finding inspiration</h2>
 
-          <p class="key-points">Conducting a competitor analysis</p>
-          <p class="key-points">Interviewing potential users</p>
-          <p class="key-points">Creating user personas</p>
+          <p class="key-points">Discovering a gap in the market</p>
+          <p class="key-points">Researching UI patterns</p>
+          <p class="key-points">Looking for inspiration</p>
 
             <p>
-              After collecting insights from potential users, I concluded the app should appeal to entry-level runners who want to find an enjoyable route locally but are uncomfortable with the seriousness or competitiveness of Strava.
-    </p>
-    <p>
-  However, I learnt it would also be valuable for serious runners who are looking for a challenging new route and want to assess the statistics in depth.
+              My app concept revolved around the idea of ‘mixing’ a playlist in a very interactive, fun and personalised way.
+              Eventually, the idea of ‘creating a mix’ was born, inspired by the mixtapes of the 80s.
+              I wanted to add some dynamism to my Now Playing page, and I remembered the spinning ‘rotary wheel’ of the old BBC iPlayer Radio app, which I always found pleasing to use. (It has been reincarnated somewhat in BBC Sounds, but has
+              arguably lost a bit of its skeuomorphic charm).
             </p>
           </div>
           <div>
-              <img class="portfolio" src=img/ux_design/trak_app/1_personas/trak_personas_2@2x.jpg alt="Sofie's user persona">
+              <img class="portfolio" src=img/ux_design/mixtape_app/1_inspiration/mixtape_inspiration_wheel@2x.jpg alt="BBC iPlayer Radio scroll wheel">
           </div>
         </div>
 
@@ -117,19 +118,14 @@
         <div class="row">
           <div class="col-md-6 col-lg-6">
 
-            <h2 class="h2-teal">2. User Flow Diagrams</h2>
-
-          <p class="key-points">Writing Jobs To Be Done</p>
-          <p class="key-points">Sketching User Flows</p>
-          <p class="key-points">Finalising a User Flow Diagram</p>
+            <h2 class="h2-teal">2. Low-Fidelity Wireframes</h2>
 
             <p>
-              My ‘Jobs To Be Done’ list focused primarily on the options that were offered on the Plan a Route screen: distance/time, elevation, terrain type, and so on.</p>
-  <p>
-              I focused on the Plan a Route functionality of the app as a priority, but also sketched out some social possibilities that could be further developed in future iterations of the app.  </p>
-            </div>
+              The low-fidelity wireframes were quite simple to pull together, as I was already very aware of the common UI elements in a music app.
+            </p>
+          </div>
           <div>
-              <img class="portfolio" src=img/ux_design/trak_app/2_user_flow/trak_user_flow_1@2x.jpg alt="User Flow Diagram">
+              <img class="portfolio" src=img/ux_design/mixtape_app/2_lowfi/mixtape_lowfi@2x.jpg alt="Low fidelity wireframes">
           </div>
         </div>
 
@@ -137,19 +133,13 @@
         <div class="row">
           <div class="col-md-6 col-lg-6">
 
-            <h2 class="h2-teal">3. Prototype testing</h2>
-
-          <p class="key-points">Building a prototype on InVision</p>
-          <p class="key-points">Conducting usability testing</p>
-          <p class="key-points">Analysing the results</p>
-
+            <h2 class="h2-teal">3. High-Fidelity Wireframes</h2>
             <p>
-              After some rapid Crazy 8s sketching, I drew a low-fidelity wireframe, and then developed a higher-fidelity version for prototype testing online.
-
-  I wouldn’t always show so much detail in an early prototype, but in this case it felt as though the app had enough intricacies that it would benefit from showing more of the offerings.</p>
+              The higher-fidelity digital wireframes took a bit longer to perfect, but came out well.
+            </p>
           </div>
           <div>
-              <img class="portfolio" src=img/ux_design/trak_app/3_prototype/trak_prototype_1@2x.jpg alt="Testing the prototype">
+              <img class="portfolio" src=img/ux_design/mixtape_app/3_highfi/mixtape_highfi@2x.png alt="High fidelity wireframes">
           </div>
         </div>
 
@@ -157,39 +147,41 @@
         <div class="row">
           <div class="col-md-6 col-lg-6">
 
-            <h2 class="h2-teal">4. Style guide</h2>
+            <h2 class="h2-teal">4. Moodboard</h2>
 
-          <p class="key-points">Producing a Style Guide</p>
-          <p class="key-points">Constructing a brand identity</p>
-          <p class="key-points">Designing imagery and icons</p>
+          <p class="key-points">Producing a moodboard</p>
+          <p class="key-points">Working on text and typography</p>
+          <p class="key-points">Finalising a colour scheme</p>
 
             <p>
-              The idea of a gradient showing areas of high and low pace was very popular in the usability testing, so this became a key aspect of the app.
-              Although a traffic light system might be more recognisable, I thought it would be likely to clash with the brand identity. Instead, I developed a teal-turquoise gradient that looked stylish and also felt suitably related to health and fitness.</p>
-
+              A recurring part of my moodboard was an eye-catching colour scheme. As I was targeting the app at young people, I knew there was more flexibility in choosing risky accent colours.
+              Pink was a common feature, partly due to the 80s neon-inspired designs I’d picked out. ‘Living Coral’ was the Pantone Colour of the Year last year, thanks in part to its use by modern, forward-thinking brands (like <a
+                href="https://monzo.com/static/images/home/hot-coral-card-render-OG.png" target="_blank">Monzo bank’s instantly recognisable credit card</a>), so a bold pink seemed like a good choice.
             </p>
           </div>
           <div>
-              <img class="portfolio" src=img/ux_design/trak_app/4_style_guide/trak_style_guide_1@2x.jpg alt="Trak Style Guide page 1 - colours">
+              <img class="portfolio" src=img/ux_design/mixtape_app/4_moodboard/mixtape_moodboard@2x.jpg alt="Moodboard">
+              <img class="portfolio" src=img/ux_design/mixtape_app/4_moodboard/mixtape_colours@2x.jpg alt="Colour scheme">
           </div>
         </div>
-
 
         <!-- Part 5 -->
         <div class="row">
           <div class="col-md-6 col-lg-6">
-
             <h2 class="h2-teal">5. Final product</h2>
-
             <p>
-The final product consisted of about 25-30 screens, plus various assets including icons and images. I also set up an interactive prototype to  show how the screens all link together.</p>          </div>
+              The final product consisted of about eight key screens, plus various assets including icons and images. I also set up an interactive prototype to demonstrate how the screens all link together.
+            </p>
+          </div>
           <div>
-              <img class="portfolio" src=img/ux_design/trak_app/6_final/trak_final_1@2x.jpg alt="Final project">
+              <img class="portfolio" src=img/ux_design/mixtape_app/5_final/mixtape_final@2x.jpg alt="Final project">
           </div>
         </div>
 
 
       </div>
+    </div>
+
   </main>
 
   <footer>
