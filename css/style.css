@@ -5,6 +5,10 @@ Nav bar - Navy - 25,30,54   /   Nav bar - 23,31,52
 Accent colour - Teal - 66,116,117; #427475;
 */
 
+#navbar {
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,37 +33,32 @@ nav > ul > li > a {
   font-weight: 500;
   font-size: 1.2em;
   padding-bottom: 3px;
-  color: rgb(255, 255, 255);
+  color: #f5f5f5;
   margin-left: 35px;
   margin-right: 15px;
 }
 
 nav > ul > li > a.current-nav {
-  border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-nav > ul > li > a:visited {
-  opacity: 0.8;
-  color: rgb(255, 255, 255);
+  border-bottom: 2px solid #f5f5f5;
 }
 
 nav > ul > li > a:hover {
-  color: rgb(66, 116, 117);
+  color: rgb(234, 237, 246);
   border-bottom: 2px solid rgb(66, 116, 117);
 }
 
 nav > ul > li > a:focus {
-  color: rgb(255, 255, 255);
+  color: #f5f5f5;
 }
 
 nav > ul > li > a:active {
-  color: rgb(255, 255, 255);
+  color: #f5f5f5;
 }
 
 nav > ul > li > a.button-nav {
   background-color: rgb(66, 116, 117);
   border: none;
-  color: white;
+  color: #f5f5f5;
   margin-left: 12px;
   margin-top: 30px;
   padding-bottom: 12px;
@@ -70,7 +69,7 @@ nav > ul > li > a.button-nav {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   border-radius: 30px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
   transition-duration: 0.2s;
@@ -117,7 +116,7 @@ nav > ul > li > a.button-nav:hover {
 }
 
 #invisible {
-  color: rgb(248,249,252);
+  color: rgb(248, 249, 252);
   text-align: center;
   padding: 0px;
   margin: 0px;
@@ -159,7 +158,20 @@ nav > ul > li > a.button-nav:hover {
 
 .index-gallery-img-link {
   transition: all 0.3s ease 0s;
-cursor: pointer;
+  cursor: pointer;
+}
+
+li {
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+
+#pale-teal {
+  background-color: #cfe0e6;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .index-gallery-img-link:hover {
@@ -171,13 +183,17 @@ cursor: pointer;
 .gallery-img-link {
   margin-top: 20px;
   transition: all 0.3s ease 0s;
-cursor: pointer;
+  cursor: pointer;
 }
 
 .gallery-img-link:hover {
   color: rgb(66, 116, 117);
   transform: translateY(-3px);
   box-shadow: 0px 15px 20px rgba(66, 116, 117, 0.4);
+}
+
+#project-highlights {
+  background-color: #f5f5f5;
 }
 
 #project-highlights .row {
@@ -195,8 +211,9 @@ cursor: pointer;
 }
 
 header {
-  padding: 10px 0 4px;
+  padding: 0.5em 0 0.25em;
   position: fixed;
+  vertical-align: middle;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
   -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
@@ -206,17 +223,6 @@ header {
   animation: header-animation 3s infinite alternate;
   background-color: rgb(23, 31, 52);
 }
-
-/*
-OLD HEADER CONTENT:
-background-color: rgb(23, 31, 52);
-padding: 10px 0 4px;
-position: fixed;
-width: 100%;
--webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
--moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
-*/
 
 @keyframes header-animation {
   0% {
@@ -229,17 +235,16 @@ box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.2);
 }
 
 main {
-  padding-top: 53px;
+  padding-top: 40px;
   /* Was 127px before nav menu changes 23.01.21 */
   /* Changed from 53px to 43px when banner added 12.12.21 */
   /* Changed back to 53px 25.01.22 */
-
 }
 
 body {
-  background-color: rgb(248, 249, 252);
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 17px;
+  background-color: #f5f5f5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
@@ -249,7 +254,7 @@ body {
 }
 
 .body-white {
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5f5;
   margin-top: 20px;
   padding-top: 1px;
 }
@@ -269,10 +274,20 @@ ul {
 }
 
 .key-points {
-  color: rgb(0, 0, 0);
+  color: rgb(23, 31, 52);
   font-size: 1em;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+li.key-points {
+  margin-left: 1em;
+  padding-right: 0;
+}
+
+p.key-points {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
 }
 
 .about-ul {
@@ -291,6 +306,7 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   width: 100%;
+  margin-top: 56px;
 }
 
 #footer-content {
@@ -299,11 +315,21 @@ footer {
 }
 
 .hero {
-  background-color: rgb(255, 255, 255);
-  padding: 72px;
+  background-color: #f5f5f5;
+  padding: 32px 16px 32px 16px;
   width: 100%;
   color: rgb(23, 31, 52);
   text-align: center;
+}
+
+.hero-left {
+  background-color: #f5f5f5;
+  max-width: 800px;
+  width: 100%;
+  color: rgb(23, 31, 52);
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title {
@@ -313,7 +339,7 @@ footer {
   animation: header-animation 3s infinite alternate;
   padding: 5px;
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: #f5f5f5;
   text-align: center;
 }
 
@@ -340,7 +366,7 @@ footer {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  display: block
+  display: block;
 }
 
 .before-after-img-desktop {
@@ -373,7 +399,7 @@ footer {
 
 #single-hero-img {
   max-width: 500px;
-  padding: 20px 5px 0;
+  padding: 0px 5px 20px;
 }
 
 #no-padding-img {
@@ -389,7 +415,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
-  font-family: 'Libre Caslon Text', sans-serif;
+  font-family: "Libre Caslon Text", sans-serif;
   font-weight: 400;
 }
 
@@ -399,17 +425,17 @@ h1 {
 }
 
 .h2-teal {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.4;
   font-weight: 300;
-  margin-top: 40px;
+  margin-top: 32px;
   margin-bottom: 8px;
   padding-bottom: 8px;
   color: rgb(66, 116, 117);
 }
 
 .h2-teal-mobile-only {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 1.4;
   font-weight: 300;
   margin-top: 20px;
@@ -425,7 +451,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -438,23 +464,22 @@ h3 {
   color: rgb(23, 31, 52);
 }
 
-
 h4 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 700;
   color: rgb(23, 31, 52);
 }
 
 p {
   display: block;
-margin-block-start: 0em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 p.pre-footer {
-  text-align:center;
+  text-align: center;
 }
 
 a {
@@ -467,11 +492,13 @@ p > a {
 }
 
 h2 > a {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
-a:visited {
-  color: rgba(66, 116, 117, 0.8);
+h2 > a:hover {
+  text-decoration: underline;
+  color: rgb(234, 237, 246);
 }
 
 a:hover {
@@ -489,9 +516,9 @@ a:active {
 a.button {
   display: inline-block;
   background-color: rgb(66, 116, 117);
-  color: white;
+  color: #f5f5f5;
   font-weight: 400;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   padding-bottom: 8px;
   padding-top: 10px;
   padding-left: 20px;
@@ -506,7 +533,7 @@ a.button2 {
   background-color: rgb(234, 237, 246);
   color: rgb(66, 116, 117);
   font-weight: 400;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   padding-bottom: 8px;
   padding-top: 10px;
   padding-left: 20px;
@@ -516,13 +543,8 @@ a.button2 {
   transition: all 0.3s ease 0s;
 }
 
-.button2:visited {
-  opacity: 0.9;
-  text-decoration: none;
-}
-
 .button2:hover {
-  background-color: white;
+  background-color: #f5f5f5;
   border: none;
   color: rgb(66, 116, 117);
   transform: translateY(-3px);
@@ -531,11 +553,6 @@ a.button2 {
 
 .button2:focus {
   opacity: 0.8;
-  text-decoration: none;
-}
-
-.button2:visited {
-  opacity: 0.9;
   text-decoration: none;
 }
 
@@ -601,109 +618,114 @@ a.button2 {
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
+.container-centre {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
 
 /* ==============================
 Medium devices (680px or larger)
 ================================= */
 @media only screen and (min-width: 680px) {
   header {
-      padding: 20px 0 13px;
-      background-size: 200%;
-    }
+    padding: 0.5em 0 0.25em;
+    background-size: 200%;
+  }
 
-    .h2-teal {
-      margin-top: 40px;
-    }
+  .h2-teal {
+    margin-top: 32px;
+  }
 
-    .h2-teal-mobile-only {
-      font-size: 1.8em;
-      line-height: 1.4;
-      font-weight: 300;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: rgb(66, 116, 117);
-      text-align: center;
-      display: none;
-    }
+  .h2-teal-mobile-only {
+    font-size: 1.5em;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(66, 116, 117);
+    text-align: center;
+    display: none;
+  }
 
-    .h3-gallery {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      color: rgb(23, 31, 52);
-    }
+  .h3-gallery {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(23, 31, 52);
+  }
 
-        .col-lg-3 {
-          width: 40%;
-          padding-bottom: 0px;
-        }
+  .col-lg-3 {
+    width: 40%;
+    padding-bottom: 0px;
+  }
 
-        .col-lg-3 #last-child-h2-teal {
-          padding-top: 0px;
-        }
+  .col-lg-3 #last-child-h2-teal {
+    padding-top: 0px;
+  }
 
-        #space-after-text {
-          padding-bottom: 0px;
-        }
+  #space-after-text {
+    padding-bottom: 0px;
+  }
 
-        #space-after-text-last-child {
-          padding-bottom: 20px;
-        }
+  #space-after-text-last-child {
+    padding-bottom: 20px;
+  }
 
-.index-gallery-img-link {
-  margin-top: 5px;
-}
+  .index-gallery-img-link {
+    margin-top: 5px;
+  }
 
+  .before-after-img-desktop {
+    width: 100%;
+    max-width: 1000px;
+    padding-top: 20px;
+    display: block;
+  }
 
-    .before-after-img-desktop {
-      width:100%;
-      max-width: 1000px;
-      padding-top: 20px;
-      display: block;
-    }
+  .before-after-img-desktop-full {
+    width: 100%;
+    padding-top: 20px;
+    display: block;
+  }
 
-    .before-after-img-desktop-full {
-      width:100%;
-      padding-top: 20px;
-      display: block;
-    }
+  .before-after-img-mobile {
+    width: 100%;
+    padding-top: 20px;
+    max-width: 1440px;
+    display: none;
+  }
 
-    .before-after-img-mobile {
-      width: 100%;
-      padding-top: 20px;
-      max-width: 1440px;
-      display: none;
-    }
+  .before-after-img-mobile-disappearing {
+    width: 100%;
+    padding-top: 20px;
+    max-width: 1440px;
+    display: none;
+  }
 
-    .before-after-img-mobile-disappearing {
-      width: 100%;
-      padding-top: 20px;
-      max-width: 1440px;
-      display: none;
-    }
+  #before-after-img-desktop {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline;
+    max-width: 600px;
+  }
 
-    #before-after-img-desktop {
-      width: 100%;
-      padding-left: 10px;
-      padding-right: 10px;
-      display: inline;
-      max-width: 600px;
-    }
+  #before-after-img-mobile {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+  }
 
-    #before-after-img-mobile {
-      width: 100%;
-      padding-left: 10px;
-      padding-right: 10px;
-      display: none;
-    }
-
-    #banner-content {
-      margin-top: 0px;
-      padding-top: 8px;
-      font-size: 0.7em;
-    }
+  #banner-content {
+    margin-top: 0px;
+    padding-top: 8px;
+    font-size: 0.7em;
+  }
 
   nav {
     width: auto;
@@ -712,11 +734,12 @@ Medium devices (680px or larger)
   }
 
   nav > ul {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
   }
 
   nav > ul > li {
     display: inline-block;
+    margin-left: 0em;
   }
 
   nav > ul > li > a {
@@ -726,21 +749,21 @@ Medium devices (680px or larger)
   }
 
   nav > ul > li > a.button-nav {
-  background-color: rgb(66, 116, 117);
-  border: none;
-  color: white;
-  padding-bottom: 12px;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 400;
-  letter-spacing: .05rem;
-  border-radius: 30px;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.2s;
-  transition-property: opacity;
+    background-color: rgb(66, 116, 117);
+    border: none;
+    color: #f5f5f5;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    border-radius: 30px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    transition-property: opacity;
   }
 
   .navtoggle.responsive nav {
@@ -760,13 +783,8 @@ Medium devices (680px or larger)
     display: none;
   }
 
-    main {
-    padding-top: 90px;
-  }
-
-  .logo {
-    max-width: 150px;
-    padding-top: 9px;
+  main {
+    padding-top: 60px;
   }
 
   img {
@@ -791,12 +809,13 @@ Medium devices (680px or larger)
   }
 
   .hero-text {
-    max-width: 480px;
+    width: 67%;
+    max-width: 1000px;
   }
 
   .hero span {
-  display: block;
-}
+    display: block;
+  }
 
   #jb {
     max-width: 150px;
@@ -814,10 +833,10 @@ Medium devices (680px or larger)
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    content: "";
+    clear: both;
+    display: table;
+  }
 
   .gallery-column-6 {
     max-width: 1000px;
@@ -834,59 +853,11 @@ Medium devices (680px or larger)
   /* Layout styling */
   .container {
     max-width: 1000px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
   }
-}
-
-
-/* ==============================
-Breakpoint for nav menu to fit in full - NAV ONLY (740px or larger)
-================================= */
-@media only screen and (min-width: 740px) {
-  nav > ul > li > a {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  nav > ul > li > a.button-nav {
-    background-color: rgb(66, 116, 117);
-    border: none;
-    color: white;
-    padding-bottom: 12px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: .05rem;
-    border-radius: 30px;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
-    transition-duration: 0.2s;
-    transition-property: opacity;
-  }
-
-  .logo {
-    max-width: 180px;
-    padding-top: 4px;
-  }
-
-  #banner-content {
-    margin-top: -8px;
-    padding-top: 8px;
-    font-size: 0.7em;
-  }
-
-  /* Layout styling */
-  .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-  }
-
 }
 
 /* ==============================
@@ -901,15 +872,14 @@ Large devices (1024px or larger)
     max-width: 250px;
   }
 
+  #banner {
+    height: 38px;
+  }
 
-      #banner {
-        height: 38px;
-      }
-
-      #banner-content {
-        margin-top: 10px;
-        font-size: 0.8em;
-      }
+  #banner-content {
+    margin-top: 10px;
+    font-size: 0.8em;
+  }
 
   nav > ul > li {
     display: inline-block;
@@ -948,15 +918,6 @@ Large devices (1024px or larger)
     max-width: 400px;
   }
 
-  .hero {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .hero-text {
-    max-width: 660px;
-  }
-
   #jb {
     max-width: 200px;
   }
@@ -967,9 +928,9 @@ Large devices (1024px or larger)
   }
 
   main {
-      padding-top: 100px;
-    }
-    /*  Added at 100px when banner added 12.12.21
+    padding-top: 84px;
+  }
+  /*  Added at 100px when banner added 12.12.21
         Kept when banner removed 25.01.22 */
 
   /* Layout styling */
@@ -981,32 +942,29 @@ Large devices (1024px or larger)
   }
 }
 
-
 /* ==============================
-X-large devices (1400px or larger)
+X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .logo {
-    max-width: 350px;
-    margin-top: 0;
+    max-width: 250px;
+  }
+
+  nav > ul {
+    margin: 1em 0 0 0;
   }
 
   nav > ul > li {
     display: inline-block;
   }
 
-  nav > ul > li > a.button-nav {
-    padding-bottom: 14px;
-    padding-top: 19px;
-    padding-left: 26px;
-    padding-right: 26px;
+  main {
+    padding-top: 84px;
   }
 
-  main {
-    padding-top: 116px;
-    /* Changed from 116px to 126px when banner added 12.12.21 */
-    /* Changed back to 116px when banner removed 25.01.22 */
-
+  #pale-teal {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .navtoggle.responsive nav {
@@ -1027,7 +985,7 @@ X-large devices (1400px or larger)
   }
 
   body {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   img {
@@ -1035,104 +993,14 @@ X-large devices (1400px or larger)
     max-width: 600px;
   }
 
-  .portfolio {
-    max-width: 600px;
-  }
-
-  .hero {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .hero-text {
-    max-width: 1100px;
-  }
-
   .hero-img {
-    max-width: 150px;
-    padding: 20px 5px 0;
+    width: 100%;
+    padding: 20px 5px 40px;
   }
 
   #single-hero-img {
     max-width: 600px;
-    padding: 20px 5px 0;
-  }
-
-  #jb {
-    max-width: 300px;
-  }
-
-  /* Layout styling */
-  .container {
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-  }
-}
-
-/* ==============================
-X-large devices (1400px or larger)
-================================= */
-@media only screen and (min-width: 1400px) {
-  .logo {
-    max-width: 350px;
-    margin-top: 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  main {
-    padding-top: 116px;
-    /* Changed from 116px to 126px when banner added 12.12.21 */
-    /* Changed back to 116px when banner removed 25.01.22 */
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0;
-  }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding-top: 0;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  body {
-    font-size: 1.6em;
-  }
-
-  img {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .hero {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .hero-text {
-    max-width: 1000px;
-  }
-
-  .hero-img {
-    width: 100%;
-    padding: 20px 5px 0;
-  }
-
-  #single-hero-img {
-    max-width: 600px;
-    padding: 20px 5px 0;
+    padding: 0px 5px 20px;
   }
 
   #jb {

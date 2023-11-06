@@ -1,267 +1,476 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redesigning a financial services website</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Mixtape music app UX design</title>
+    <link
+      rel="canonical"
+      href="http://jjbrowndesign.uk/finance-website-ux-designer"
+    />
 
-  <link rel="canonical" href="http://jjbrowndesign.uk/finance-website-ux-designer" />
+    <link href="img/logos/favicon.ico" rel="shortcut icon" />
 
-  <link href="img/logos/favicon.ico" rel="shortcut icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K7WVHH5LJ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K7WVHH5LJ2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag("config", "G-K7WVHH5LJ2");
+    </script>
 
-    gtag('config', 'G-K7WVHH5LJ2');
-  </script>
+    <meta
+      name="description"
+      content="UX design case study for a music player app that allows users to that allows users to build their ideal music playlist, based on mood, genre and more. Featuring wireframes and prototypes. Learn more."
+    />
 
-  <meta name="description" content="UX design case study for a music player app that allows users to that allows users to build their ideal music playlist, based on mood, genre and more. Featuring wireframes and prototypes. Learn more.">
+    <script
+      src="https://kit.fontawesome.com/db5ab4ae02.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/db5ab4ae02.js" crossorigin="anonymous"></script>
+    <meta
+      name="theme-color"
+      content="#09202C"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#09202C"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
 
-  <meta name="theme-color" content="#09202C" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#09202C" media="(prefers-color-scheme: dark)">
-  
-</head>
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="img/logos/jeremybrown_logo.svg"
+              alt="J J Brown Design logo"
+            />
+          </a>
 
-<body>
-  <header>
-
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-
-        <a href="index.html">
-          <img class="logo" src="img/logos/jeremybrown_logo.svg" alt="J J Brown Design logo">
-        </a>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="current-nav" href="ux-designer.html">UX Design</a></li>
-            <li><a href="contact-ux-designer.html">Get in touch</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a class="current-nav" href="case-studies.html">Case studies</a>
+              </li>
+              <li><a href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch" class="button-nav">Get in touch</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-
-
+    <main>
       <!-- Hero section -->
       <div class="hero">
-          <p class="key-points">Website</p>
-            <h1>Financial services</h1>
+        <p class="key-points">Case study</p>
+        <h1>Redesigning a financial services website</h1>
         <div class="hero-text">
-        <p>Working in-house as UX Designer for a respected large investment manager based in Edinburgh. A website to show the range of funds available.</p>
-      </div>
+          <p>
+            Conducting a full overhaul of the website, bringing a new focus on
+            clear navigation and accessibility. Designing iterative wireframes,
+            creating prototypes for user tests, and building a design system.
+          </p>
+        </div>
 
         <div>
           <picture>
-            <source srcset=img/ux_design/finace_website/0_mockups/mixtape_mockup2@1x.jpg media="(max-width:767px)">
-            <img id="single-hero-img" class="hero-img" src=img/ux_design/mixtape_app/0_mockups/mixtape_mockup2@2x.jpg alt="Mixtape app playing music">
+            <source srcset=img/ux_design/finance_website/finance_website@1x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/finance_website@2x.jpg
+            alt="Financial services website screenshots">
           </picture>
         </div>
       </div>
 
-
-                    <div class="section-title">
-                    <h2>☟ Highlights of the project</h2>
-                    </div>
-
-            <div class="container" id="project-highlights">
-
-      <br>
-
+      <div class="container-centre" id="project-highlights">
         <!-- Part 1 -->
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
+        <div class="hero-left">
+          <h2 class="h2-teal">1. Identifying the problems</h2>
 
-            <h2 class="h2-teal">1. Iterating and testing</h2>
-
-          <p class="key-points">Rapidly iterating possible designs</p>
-          <p class="key-points">Receiving results from UX Researchers</p>
-          <p class="key-points">Presenting findings to project group</p>
-
-            <p>
-              An early discovery phase had already taken place when I joined the project. An agency specialising in development had been attached to the project, but they needed guidance to bed decisions in UX best practice and user research. We therefore needed to create and prototype alternative mid-fidelity wireframes and get them tested with users.
-            </p>
-            <p>
-              We then presented these to stakeholders in the business, explaining the results from the testing.
-             </p>
-          </div>
-          <div>
-              <img class="portfolio" src=img/ux_design/mixtape_app/1_inspiration/mixtape_inspiration_wheel@2x.jpg alt="BBC iPlayer Radio scroll wheel">
-          </div>
-        </div>
-
-        <!-- Part 2 -->
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-
-            <h2 class="h2-teal">2. Low-Fidelity Wireframes</h2>
-
-            <p>
-              x
-            </p>
-          </div>
-          <div>
-              <img class="portfolio" src=img/ux_design/mixtape_app/2_lowfi/mixtape_lowfi@2x.jpg alt="Low fidelity wireframes">
-          </div>
-        </div>
-
-        <!-- Part 3 -->
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-
-            <h2 class="h2-teal">3. High-Fidelity Wireframes</h2>
-            <p>
-              x
-            </p>
-          </div>
-          <div>
-              <img class="portfolio" src=img/ux_design/mixtape_app/3_highfi/mixtape_highfi@2x.png alt="High fidelity wireframes">
-          </div>
-        </div>
-
-        <!-- Part 4 -->
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-
-            <h2 class="h2-teal">4. Moodboard</h2>
-
-          <p class="key-points">Producing a moodboard</p>
-          <p class="key-points">Working on text and typography</p>
-          <p class="key-points">Finalising a colour scheme</p>
+          <h3>UX maturity</h3>
           <p>
-            x
+            Despite only being 6 years old, the website was - to put it bluntly
+            - a mess!
           </p>
-          </div>
-          <div>
-              <img class="portfolio" src=img/ux_design/mixtape_app/4_moodboard/mixtape_moodboard@2x.jpg alt="Moodboard">
-              <img class="portfolio" src=img/ux_design/mixtape_app/4_moodboard/mixtape_colours@2x.jpg alt="Colour scheme">
-          </div>
-        </div>
+          <p>
+            The UX Design function had only been introduced the year before.
+            This meant, when senior stakeholders asked for their niche new
+            project to be added to the main navigation bar, there was nobody to
+            gatekeep and to represent the user’s interests.
+          </p>
 
-        <!-- Part 5 -->
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-            <h2 class="h2-teal">5. Final product</h2>
+          <h3>Consistency</h3>
+          <p>
+            Sitewide consistency was poor, leaving the user to learn new
+            patterns and UI elements on every page.
+          </p>
+          <p>
+            For example, clicking a tile on the ‘multigrid’ would sometimes take
+            users to another page, sometimes open up a PDF, and sometimes do
+            nothing at all.
+          </p>
+          <p>
+            We saw this time and time again on HotJar clickmaps and UserTesting
+            videos. (Never has the browser’s Back button been so popular!)
+          </p>
+
+          <h3>Navigation and accessibility</h3>
+          <p>
+            With no logical Information Architecture to organise content, the
+            main navigation bar held 11 items at times, including short-lived
+            events and links to microsites.
+          </p>
+          <picture>
+            <source
+            srcset=img/ux_design/finance_website/identifying_problems@2x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/identifying_problems@2x.jpg
+            alt="The ugly old website">
+          </picture>
+          <p>
+            Meanwhile, everywhere you looked, there were accessibility issues
+            (nightmares?): from the standard body text size of 14px to the
+            regular use of white text over images.
+          </p>
+          <p>Things needed to change!</p>
+
+        </div>
+        <!-- Part 2 -->
+        <div class="hero-left">
+          <h2 class="h2-teal">2. Working alongside an agency</h2>
+          <p>
+            Before our team was hired, the company had attached an agency to the
+            project. This meant that, when we arrived, the project was already
+            partway through the Discovery process. Unfortunately, this had been
+            far too focused on the opinions of senior stakeholders in the
+            business, rather than the problems that users were encountering.
+          </p>
+          <h3>Refocusing on the user</h3>
+          <p>
+            As a team, we therefore had a week between meetings to rapidly
+            create some alternative proposals based around our users.
+          </p>
+          <p>
+            Each week, I would create a handful of wireframes and we discussed
+            their relative merits. Then our amazing UX Researcher set up
+            unmoderated user tests to get feedback on the various proposals,
+            including those from the agency.
+          </p>
+          <p>
+            As we gained the agency’s trust, we were eventually able to embed
+            this user testing officially in the process.
+          </p>
+        </div>
+      </div>
+
+      <!-- Part 3 - Highlight section -->
+      <div class="container">
+        <div class="hero" id="pale-teal">
+          <p class="key-points">- Project highlight -</p>
+          <h2 class="h2-teal">3.Iterating and testing</h2>
+          <div class="hero-text">
             <p>
-              The final product consisted of about eight key screens, plus various assets including icons and images. I also set up an interactive prototype to demonstrate how the screens all link together.
+              The company's key products, funds, were presented on incredibly
+              dense pages. Some key details were presented on the left sidebar,
+              but due to
+              <a
+                href="https://www.nngroup.com/articles/fight-right-rail-blindness/"
+                >sidebar blindess</a
+              >
+              users were failing to find this content. Users had to scroll down
+              a
+              <b>long(!)</b> page with poor text hierarchy to find key content
+              like factsheets, ISIN numbers and portfolios. This was shown in
+              user testing - and in the Hotjar click maps:
             </p>
           </div>
-          <div>
-              <img class="portfolio" src=img/ux_design/mixtape_app/5_final/mixtape_final@2x.jpg alt="Final project">
+
+          <picture>
+            <source srcset=img/ux_design/finance_website/finance_website@1x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/example_of_work@2x.jpg alt="Hotjar
+            click results showing popular clicks far down the page">
+          </picture>
+
+          <div class="hero-text">
+            <p>
+              Our UX Researcher conducted some user testing to discover user's
+              priorities with the content. This suggested that past performance,
+              holdings and prices were especially important to 80% of users.
+            </p>
+            <p>
+              We also set up a comparison between the vertical tabbed navigation
+              proposed by the agency...
+            </p>
+
+            <picture>
+              <source
+              srcset=img/ux_design/finance_website/iterating_and_testing_2@2x.gif
+              media="(max-width:767px)"> <img id="single-hero-img"
+              class="hero-img"
+              src=img/ux_design/finance_website/iterating_and_testing_2@2x.gif
+              alt="User test of vertical navigation">
+            </picture>
+          </div>
+
+          <div class="hero-text">
+            <p>... and the possibility of horizontal tabbed navigation.</p>
+            <picture>
+              <source
+              srcset=img/ux_design/finance_website/iterating_and_testing_1@2x.gif
+              media="(max-width:767px)"> <img id="single-hero-img"
+              class="hero-img"
+              src=img/ux_design/finance_website/iterating_and_testing_1@2x.gif
+              alt="User test of horizontal navigation">
+            </picture>
+          </div>
+
+          <div class="hero-text">
+            <p>
+              The user testing revealed that the
+              <b>horizontal tabbed navigation</b>
+              had a higher ease of completion rating of 4.6 out 5 (compared to
+              4.17 out of 5), and so we decided to move in this direction going
+              forward.
+            </p>
           </div>
         </div>
-
-
       </div>
-    </div>
 
-  </main>
+      <div class="container-centre" id="project-highlights">
+        <!-- Part 4 -->
+        <div class="hero-left">
+          <h2 class="h2-teal">4. Visual design</h2>
 
-  <footer>
+          <h3>Giving feedback</h3>
+          <p>
+            The agency then did a great first iteration of the visual design. As my company didn't have an official in-house UI Designer, we had to limit our feedback to usability issues, rather than collaborating as a cohesive UX/UI team.
+          </p>
+     
+          <picture>
+            <source
+            srcset=img/ux_design/finance_website/visual_design@2x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/visual_design@2x.jpg
+            alt="The ugly old website">
+          </picture>
+          <p>
+            For example, some 12px font sizes crept in, and we knew our brand team were uncomfortable with adding colour without an image to set the colour's context.
+              </p>
+        </div>
+      </div>
+        <div class="container">
+          <div class="hero" id="pale-teal">
+            <p><b>Looking to hire a UX Designer with experience collaborating, problem-solving and presenting?</b></p>
+            <a class="button" href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
+              >Send me an email</a>
+          </div>
+  
 
-    <!-- Contact section -->
-    <div class="container" id="footer-content">
+    </main>
 
-      <!-- LinkedIn icon link -->
+    <footer>
+      <!-- Contact section -->
+      <div class="container" id="footer-content">
+        <!-- LinkedIn icon link -->
 
-      <a href="https://linkedin.com/in/jjbrowndesign" target="_blank">
-        <svg class="social" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-          <g id="g5891">
-            <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-            <g id="shapes">
-              <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-              <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                style="fill:#fff;fill-rule:nonzero;" />
+        <a href="https://linkedin.com/in/jjbrowndesign" target="_blank">
+          <svg
+            class="social"
+            height="100%"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="g5891">
               <path
-                d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                id="path15" style="fill:#fff;fill-rule:nonzero;" />
+                d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
+                id="background"
+                style="fill: #2867b2"
+              />
+              <g id="shapes">
+                <rect
+                  height="257.962"
+                  id="rect11"
+                  style="fill: #fff"
+                  width="85.76"
+                  x="61.053"
+                  y="178.667"
+                />
+                <path
+                  d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                  id="path13-0"
+                  style="fill: #fff; fill-rule: nonzero"
+                />
+                <path
+                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                  id="path15"
+                  style="fill: #fff; fill-rule: nonzero"
+                />
+              </g>
             </g>
-          </g>
-        </svg>
-      </a>
+          </svg>
+        </a>
 
+        <!-- Instagram icon link -->
 
-      <!-- Instagram icon link -->
+        <a href="https://instagram.com/jjbrowndesign" target="_blank">
+          <svg
+            class="social"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: url(#radial-gradient);
+                }
 
-      <a href="https://instagram.com/jjbrowndesign" target="_blank">
+                .cls-2 {
+                  fill: #fff;
+                }
+              </style>
+              <radialGradient
+                cx="-578.95"
+                cy="-837.6"
+                gradientTransform="translate(499.5 629.5) scale(0.75)"
+                gradientUnits="userSpaceOnUse"
+                id="radial-gradient"
+                r="197.06"
+              >
+                <stop offset="0" stop-color="#f9ed32" />
+                <stop offset="0.36" stop-color="#ee2a7b" />
+                <stop offset="0.44" stop-color="#d22a8a" />
+                <stop offset="0.6" stop-color="#8b2ab2" />
+                <stop offset="0.83" stop-color="#1b2af0" />
+                <stop offset="0.88" stop-color="#002aff" />
+              </radialGradient>
+            </defs>
+            <title />
+            <g data-name="3-instagram" id="_3-instagram">
+              <rect
+                class="cls-1"
+                height="64"
+                rx="11.2"
+                ry="11.2"
+                transform="translate(64 64) rotate(180)"
+                width="64"
+              />
+              <path
+                class="cls-2"
+                d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z"
+              />
+              <path
+                class="cls-2"
+                d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z"
+              />
+              <circle class="cls-2" cx="45.6" cy="19.2" r="2.4" />
+            </g>
+          </svg>
+        </a>
 
-        <svg class="social" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: url(#radial-gradient);
-              }
+        <!-- Twitter icon link -->
 
-              .cls-2 {
-                fill: #fff;
-              }
-            </style>
-            <radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06">
-              <stop offset="0" stop-color="#f9ed32" />
-              <stop offset="0.36" stop-color="#ee2a7b" />
-              <stop offset="0.44" stop-color="#d22a8a" />
-              <stop offset="0.6" stop-color="#8b2ab2" />
-              <stop offset="0.83" stop-color="#1b2af0" />
-              <stop offset="0.88" stop-color="#002aff" />
-            </radialGradient>
-          </defs>
-          <title />
-          <g data-name="3-instagram" id="_3-instagram">
-            <rect class="cls-1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64" />
-            <path class="cls-2" d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z" />
-            <path class="cls-2" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z" />
-            <circle class="cls-2" cx="45.6" cy="19.2" r="2.4" />
-          </g>
-        </svg>
-      </a>
+        <a href="https://twitter.com/jjbrown_design" target="_blank">
+          <svg
+            class="social"
+            height="100%"
+            style="
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+              stroke-linejoin: round;
+              stroke-miterlimit: 2;
+            "
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="100%"
+          >
+            <g>
+              <path
+                d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z"
+                id="Dark_Blue"
+                style="fill: #1da1f2; fill-rule: nonzero"
+              />
+              <path
+                d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312"
+                id="Logo__x2014__FIXED"
+                style="fill: #fff; fill-rule: nonzero"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
 
-            <!-- Twitter icon link -->
-
-            <a href="https://twitter.com/jjbrown_design" target="_blank">
-              <svg class="social" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%">
-                <g>
-                  <path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;" />
-                  <path
-                    d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312"
-                    id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;" />
-                </g>
-              </svg>
-            </a>
-
-
-    </div>
-
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-  <script src="js/scripts.js"></script>
-
-</body>
-
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
