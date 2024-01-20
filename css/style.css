@@ -421,7 +421,7 @@ h4 {
 
 h1 {
   font-size: 1.8em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .h2-teal {
@@ -447,12 +447,12 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 8px;
   margin-bottom: 8px;
   padding-top: 8px;
@@ -465,8 +465,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 1.2em;
+  font-weight: 500;
   color: rgb(23, 31, 52);
 }
 
