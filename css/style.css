@@ -357,6 +357,15 @@ h4 {
   padding-bottom: 0.4em;
 }
 
+.body-prominent {
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 16px;
+  margin-bottom: 8px;
+}
+
 p {
   display: block;
   margin-block-start: 0em;
