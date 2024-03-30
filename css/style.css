@@ -51,6 +51,7 @@ nav > ul > li > a.current-nav {
 nav > ul > li > a:hover {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
+  fill: var(--accent);
 }
 
 nav > ul > li > a:focus {
@@ -80,6 +81,10 @@ nav > ul > li > a:active {
   font-size: 23px;
 }
 
+.nav-external-link {
+  color: var(--black);
+}
+
 .navtoggle.responsive nav {
   padding: 10px 0 0;
 }
@@ -102,10 +107,19 @@ nav > ul > li > a:active {
 }
 
 .social {
-  max-width: 45px;
-  max-height: 45px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-height: 64px;
+  max-width: 64px;
+}
+
+.nav-icon {
+  max-width: 14px;
+  max-height: 14px;
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+.nav-icon:hover {
+  color: var(--accent);
 }
 
 .row::after {
@@ -383,6 +397,12 @@ p {
   margin-inline-end: 0px;
 }
 
+#attribution {
+  margin-top: 24px;
+  font-size: 0.8em;
+  color: var(--black);
+}
+
 p.pre-footer {
   text-align: center;
 }
@@ -542,9 +562,9 @@ a.button2 {
 }
 
 /* ==============================
-Medium devices (680px or larger)
+Medium devices (752px or larger)
 ================================= */
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 752px) {
   .h2-accent {
     margin-top: 32px;
   }
