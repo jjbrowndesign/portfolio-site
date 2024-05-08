@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redesigning a financial services website</title>
+
+    <link
+      rel="canonical"
+      href="http://jjbrowndesign.uk/redesigning-finance-website-ux-designer"
+    />
+
+    <link href="img/logos/favicon.ico" rel="shortcut icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K7WVHH5LJ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K7WVHH5LJ2");
+    </script>
+
+    <meta
+      name="description"
+      content="Conducting a full overhaul of the website, bringing a new focus on
+      clear navigation and accessibility. Designing wireframes,
+      creating prototypes for user tests, and building a design system."
+    />
+
+    <script
+      src="https://kit.fontawesome.com/db5ab4ae02.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="img/logos/jeremybrown_logo.svg"
+              alt="J J Brown Design logo"
+            />
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="current-nav" href="case-studies.html">Case studies</a></li>
+              <li><a href="https://medium.com/@jjbrowndesign" target="_blank" rel="noopener noreferrer">Blog<svg class="nav-icon" viewBox="0 0 512 512" width="100%"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></a></li>
+
+              <li>
+                <a
+                  href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
+                  class="button"
+                  >Get in touch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <div class="hero">
+        <p class="key-points">Case study</p>
+        <h1>Redesigning a financial services website</h1>
+        <div class="hero-text">
+          <p>
+            Conducting a full overhaul of <a href="https://www.bailliegifford.com/en/uk/institutional-investor/" target=”_blank” rel=”noreferrer noopener”>the website</a>, bringing a new focus on
+            clear navigation and accessibility. Designing wireframes,
+            creating prototypes for user tests, and building a design system.
+          </p>
+        </div>
+
+        <div>
+          <picture>
+            <source srcset=img/ux_design/finance_website/finance_website@1x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/finance_website@2x.jpg
+            alt="Financial services website screenshots">
+          </picture>
+        </div>
+      </div>
+
+      <div class="container-centre" id="project-highlights">
+        <!-- Part 1 -->
+        <div class="hero-left">
+          <h2 class="h2-accent">1. Identifying the problems</h2>
+
+          <h3>UX maturity</h3>
+          <p>
+            Despite only being 6 years old, the website was - to put it bluntly
+            - a mess!
+          </p>
+          <p>
+            The UX Design function had only been introduced the year before.
+            This meant, when senior stakeholders asked for their niche new
+            project to be added to the main navigation bar, there was nobody to
+            gatekeep and to represent the user’s interests.
+          </p>
+
+          <h3>Consistency</h3>
+          <p>
+            Sitewide consistency was poor, leaving the user to learn new
+            patterns and UI elements on every page.
+          </p>
+          <p>
+            For example, clicking a tile on the ‘multigrid’ would sometimes take
+            users to another page, sometimes open up a PDF, and sometimes do
+            nothing at all.
+          </p>
+          <p>
+            We saw this time and time again on HotJar clickmaps and UserTesting
+            videos. (Never has the browser’s Back button been so popular!)
+          </p>
+
+          <h3>Navigation and accessibility</h3>
+          <p>
+            With no logical Information Architecture to organise content, the
+            main navigation bar held 11 items at times, including short-lived
+            events and links to microsites.
+          </p>
+          <picture>
+            <source
+            srcset=img/ux_design/finance_website/identifying_problems@2x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/identifying_problems@2x.jpg
+            alt="The ugly old website">
+          </picture>
+          <p>
+            Meanwhile, everywhere you looked, there were accessibility issues: from the standard body text size of 14px to the
+            regular use of white text over images.
+          </p>
+
+        </div>
+        <!-- Part 2 -->
+        <div class="hero-left">
+          <h2 class="h2-accent">2. Working alongside an agency</h2>
+          <p>
+            Before our team was hired, the company had attached an agency to the
+            project. This meant that, when we arrived, the project was already
+            partway through the Discovery process. Unfortunately, this had been more focused on senior stakeholders than on user's problems.
+          </p>
+          <h3>Refocusing on the user</h3>
+          <p>
+            As a team, we therefore had a week between meetings with the agency to rapidly prototype some alternative proposals based around analytics and user testing.
+          </p>
+          <p>
+            Each week, I would create a handful of wireframes and the UX team would discuss
+            their relative merits. Then our amazing UX Researcher set up
+            unmoderated user tests to get feedback on the various proposals,
+            including those from the agency. They would then share their findings and we would make iterative tweaks to the most successful wireframes.
+          </p>
+          <p>
+            As we gained the agency’s trust, we were eventually able to embed
+            this user testing officially in the process.
+          </p>
+        </div>
+      </div>
+
+      <!-- Part 3 - Highlight section -->
+      <div class="container">
+        <div class="hero" id="pale-accent">
+          <p class="key-points">- Project highlight -</p>
+          <h2 class="h2-accent">3.Iterating and testing</h2>
+          <div class="hero-text">
+            <p>
+              The company's key products - investment funds - were presented on incredibly
+              dense pages. Some key details were presented on the left sidebar,
+              but due to
+              <a
+                href="https://www.nngroup.com/articles/fight-right-rail-blindness/" target="_blank" rel="noopener noreferrer"
+                >sidebar blindess</a
+              >
+              users were failing to find this content. Users had to scroll down
+              a
+              <b>long(!)</b> page with poor text hierarchy to find content
+              like factsheets, ISIN numbers and portfolios. I indentified this content was key through the Hotjar click maps:
+            </p>
+          </div>
+
+          <picture>
+            <source srcset=img/ux_design/finance_website/example_of_work@2x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/example_of_work@2x.jpg alt="Hotjar
+            click results showing popular clicks far down the page">
+          </picture>
+
+          <div class="hero-text">
+            <p>
+              Our UX Researcher conducted user testing to validate this and to discover user's
+              other priorities. The testing also suggested that past performance,
+              holdings and prices were especially important to 80% of users.
+            </p>
+            <p>
+              I then set up prototypes so we could test the vertical tabbed navigation
+              proposed by the agency...
+            </p>
+
+            <picture>
+              <source
+              srcset=img/ux_design/finance_website/iterating_and_testing_2@2x.gif
+              media="(max-width:767px)"> <img id="single-hero-img"
+              class="hero-img"
+              src=img/ux_design/finance_website/iterating_and_testing_2@2x.gif
+              alt="User test of vertical navigation">
+            </picture>
+          </div>
+
+          <div class="hero-text">
+            <p>... and the possibility of horizontal tabbed navigation, which I felt would improve the visibility of these key sections and would make for more consistency between desktop and mobile.</p>
+            <picture>
+              <source
+              srcset=img/ux_design/finance_website/iterating_and_testing_1@2x.gif
+              media="(max-width:767px)"> <img id="single-hero-img"
+              class="hero-img"
+              src=img/ux_design/finance_website/iterating_and_testing_1@2x.gif
+              alt="User test of horizontal navigation">
+            </picture>
+          </div>
+
+          <div class="hero-text">
+            <p>
+              The user testing revealed that the
+              <b>horizontal tabbed navigation</b>
+              had a higher ease of completion rating of 4.6 out 5 (compared to
+              4.17 out of 5). So, after a few tweaks to the design, we were able to present our findings to the business and convinced them to move in this direction going
+              forward.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-centre" id="project-highlights">
+        <!-- Part 4 -->
+        <div class="hero-left">
+          <h2 class="h2-accent">4. Visual design</h2>
+
+          <h3>Giving feedback</h3>
+          <p>
+            The UI Designer then did a great first iteration of the visual design.
+          </p>
+     
+          <picture>
+            <source
+            srcset=img/ux_design/finance_website/visual_design@2x.jpg
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/finance_website/visual_design@2x.jpg
+            alt="The ugly old website">
+          </picture>
+          <p>
+            We worked together to improve some areas, especially accessibility (some 12px font sizes had crept in!).
+              </p>
+              <p>
+               We followed a similar process throughout the planning stage of the project, until we had mockups for all the key areas of the site. It was then time to move onto the build stage...
+                  </p>
+        </div>
+      </div>
+        <div class="container">
+          <div class="hero" id="pale-accent">
+            <p><b>Looking to hire a UX Designer with experience collaborating, problem-solving and presenting?</b></p>
+            <a class="button" href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
+              >Send me an email</a>
+          </div>
+  
+
+    </main>
+
+    <footer>
+      <!-- Contact section -->
+      <div class="container" id="footer-content">
+
+        <!-- LinkedIn icon link -->
+
+        <a href="https://linkedin.com/in/jjbrowndesign"  target="_blank" rel="noopener noreferrer">
+          <img
+            class="social"
+            src="img/social_icons/icons8-linkedin.svg"
+            alt="Find me on LinkedIn"
+           
+          />
+        </a>
+
+        <!-- Medium link -->
+
+        <a href="https://medium.com/@jjbrowndesign" target="_blank" rel="noopener noreferrer">
+          <img
+            class="social"
+            src="img/social_icons/icons8-medium.svg"
+            alt="Read my blog on Medium"
+          />
+        </a>
+
+        <!-- Instagram icon link -->
+
+        <a href="https://instagram.com/jjbrowndesign" target="_blank" rel="noopener noreferrer">
+          <img
+            class="social"
+            src="img/social_icons/icons8-instagram.svg"
+            alt="View my work on Instagram"
+           
+          />
+        </a>
+        <p id="attribution">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p id="attribution">Website created by me using HTML, CSS and Javascript</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
