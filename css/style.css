@@ -195,6 +195,10 @@ body {
   color: var(--dark-text);
 }
 
+.row {
+  padding-bottom: 40px;
+}
+
 ul {
   padding-left: 0;
   padding-right: 0;
@@ -588,10 +592,6 @@ Medium devices (752px or larger)
 
   .col-lg-3 #last-child-h2-accent {
     padding-top: 0px;
-  }
-
-  #space-after-text {
-    padding-bottom: 0px;
   }
 
   #space-after-text-last-child {
