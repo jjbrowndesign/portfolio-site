@@ -106,11 +106,6 @@ nav > ul > li > a:active {
   margin: 0px;
 }
 
-.social {
-  max-height: 64px;
-  max-width: 64px;
-}
-
 .nav-icon {
   max-width: 14px;
   max-height: 14px;
@@ -120,6 +115,11 @@ nav > ul > li > a:active {
 
 .nav-icon:hover {
   color: var(--accent);
+}
+
+.social {
+  max-height: 64px;
+  max-width: 64px;
 }
 
 .row::after {
@@ -247,7 +247,6 @@ footer {
 }
 
 #testimonials {
-  background-color: var(--background);
   max-width: 750px;
   width: 100%;
   color: var(--dark-text);
@@ -557,6 +556,10 @@ a.button2 {
 .container {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+#pale {
+  background-color: var(--accent10);
 }
 
 .container-centre {
