@@ -99,7 +99,7 @@
               <li>
                 <a
                   href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
-                  class="button"
+                  class="button2"
                   >Get in touch</a
                 >
               </li>
@@ -124,8 +124,8 @@
         <h1>Improving accessibility and navigation</h1>
         <div class="hero-text">
           <p>
-            Conducting a full redesign of <a href="https://www.bailliegifford.com/en/uk/institutional-investor/" target=”_blank” rel=”noreferrer noopener”>a financial services website</a>, based on user testing. Designing wireframes,
-            creating rapid prototypes, and iterating based on the results.
+            Conducting a full redesign of a financial services website, led by user testing. Identifying problems, designing wireframes,
+            creating prototypes, and iterating based on the results.
           </p>
         </div>
 
@@ -144,19 +144,7 @@
         <!-- Part 1 -->
         <div class="hero-left">
           <h2 class="h2-accent">1. Identifying the problems</h2>
-
-          <h3>UX maturity</h3>
-          <p>
-            Despite only being 6 years old, the website was - to put it bluntly
-            - a mess!
-          </p>
-          <p>
-            The UX Design function had only been introduced the year before.
-            This meant, when senior stakeholders asked for their niche new
-            project to be added to the main navigation bar, there was nobody to
-            gatekeep and to represent the user’s interests.
-          </p>
-
+          
           <h3>Consistency</h3>
           <p>
             Sitewide consistency was poor, leaving the user to learn new
@@ -167,16 +155,27 @@
             users to another page, sometimes open up a PDF, and sometimes do
             nothing at all.
           </p>
+          <picture>
+            <source
+            srcset=img/ux_design/redesigning_finance_website/multigrid@1x.gif
+            media="(max-width:767px)"> <img id="single-hero-img"
+            class="hero-img"
+            src=img/ux_design/redesigning_finance_website/multigrid@1x.gif
+            alt="A video of a user hovering over a handful of unclear image boxes that seem to have links to elsewhere.">
+          </picture>
+          
           <p>
-            We saw this time and time again on HotJar clickmaps and UserTesting
-            videos. (Never has the browser’s Back button been so popular!)
+            We saw confusion about this time and time again on HotJar clickmaps and UserTesting
+            videos.
           </p>
 
-          <h3>Navigation and accessibility</h3>
+          <h3>Navigation</h3>
+          <p>Previously there had been nobody to
+          'gatekeep' areas like navigation menus to make sure user experience was prioritised over competing business goals.</p>
           <p>
             With no logical Information Architecture to organise content, the
-            main navigation bar held 11 items at times, including short-lived
-            events and links to microsites.
+            main navigation bar held 11 items at times: stuffed full of niche projects, short-lived
+            events and links to external microsites.
           </p>
           <picture>
             <source
@@ -186,6 +185,8 @@
             src=img/ux_design/redesigning_finance_website/identifying_problems@2x.jpg
             alt="The ugly old website">
           </picture>
+
+          <h3>Accessibility</h3>
           <p>
             Meanwhile, everywhere you looked, there were accessibility issues: from the standard body text size of 14px to the
             regular use of white text over images.
@@ -194,25 +195,29 @@
         </div>
         <!-- Part 2 -->
         <div class="hero-left">
-          <h2 class="h2-accent">2. Working alongside an agency</h2>
+          <h2 class="h2-accent">2. Prototyping and testing at pace</h2>
           <p>
-            Before our team was hired, the company had attached an agency to the
-            project. This meant that, when we arrived, the project was already
-            partway through the Discovery process. Unfortunately, this had been more focused on senior stakeholders than on user's problems.
+            The company had only just set up its UX team. So, when we arrived, the project was already
+            partway through an unstructured discovery process that had unfortunately failed to engage with users and their problems.
           </p>
           <h3>Refocusing on the user</h3>
           <p>
-            As a team, we therefore had a week between meetings with the agency to rapidly prototype some alternative proposals based around analytics and user testing.
+            As a team, we ran week-long sprints to rapidly prototype and test design proposals based on analytics and UX best practices.
           </p>
           <p>
-            Each week, I would create a handful of wireframes and the UX team would discuss
-            their relative merits. Then our amazing UX Researcher set up
-            unmoderated user tests to get feedback on the various proposals,
-            including those from the agency. They would then share their findings and we would make iterative tweaks to the most successful wireframes.
-          </p>
-          <p>
-            As we gained the agency’s trust, we were eventually able to embed
-            this user testing officially in the process.
+            At the start of each week, I would rapidly create a handful of wireframes and we would discuss
+            their relative merits.</p>
+
+            <picture>
+              <source srcset=img/ux_design/redesigning_finance_website/strategies-grid-all-v123@2x.gif
+              media="(max-width:767px)"> <img id="single-hero-img"
+              class="hero-img"
+              src=img/ux_design/redesigning_finance_website/strategies-grid-all-v123@2x.gif alt="Hotjar
+              click results showing popular clicks far down the page">
+            </picture>
+                        
+            <p>Then our amazing UX Researcher set up
+            unmoderated user tests on UserTesting to get feedback on the two most promising options. I would then assess her findings and (if necessary) make iterative tweaks to the most successful version, before presenting it back to the project group.
           </p>
         </div>
       </div>
@@ -221,21 +226,16 @@
       <div class="container">
         <div class="hero" id="pale-accent">
           <p class="key-points">- Project highlight -</p>
-          <h2 class="h2-accent">3.Iterating and testing</h2>
+          <h2 class="h2-accent">3. Learning from users</h2>
           <div class="hero-text">
             <p>
-              The company's key products - investment funds - were presented on incredibly
-              dense pages. Some key details were presented on the left sidebar,
-              but due to
-              <a
-                href="https://www.nngroup.com/articles/fight-right-rail-blindness/" target="_blank" rel="noopener noreferrer"
-                >sidebar blindess</a
-              >
-              users were failing to find this content. Users had to scroll down
-              a
-              <b>long(!)</b> page with poor text hierarchy to find content
-              like factsheets, ISIN numbers and portfolios. I indentified this content was key through the Hotjar click maps:
-            </p>
+              I had concerns that our core products (investment funds) were presented on incredibly
+              dense pages.
+              </p><p>To check this hypothesis, I indentified some key content (factsheets, ISIN numbers and portfolios) through Hotjar click maps and stakeholder input.</p>
+                <p>Then we conducted some testing, which revealed that users were indeed failing to find this content. In some cases, this was no doubt due to 
+                <a
+                  href="https://www.nngroup.com/articles/fight-right-rail-blindness/" target="_blank" rel="noopener noreferrer"
+                  >sidebar blindess</a>, as crucial items were hidden in grey boxes on the side of the page.</p><p>I also analysed the scroll depth to reveal that users were giving up on scrolling down the <b>long!</b> page. And interviews with users suggested they were struggling to identify important items due to the poor text hierarchy...
           </div>
 
           <picture>
@@ -247,14 +247,9 @@
           </picture>
 
           <div class="hero-text">
+            <h3>Navigation</h3>
             <p>
-              Our UX Researcher conducted user testing to validate this and to discover user's
-              other priorities. The testing also suggested that past performance,
-              holdings and prices were especially important to 80% of users.
-            </p>
-            <p>
-              I then set up prototypes so we could test the vertical tabbed navigation
-              proposed by the agency...
+              Navigation was clearly something we needed to solve urgently. So I created more prototypes so we could test the agency's proposed vertical tabbed navigation...
             </p>
 
             <picture>
@@ -268,7 +263,7 @@
           </div>
 
           <div class="hero-text">
-            <p>... and the possibility of horizontal tabbed navigation, which I felt would improve the visibility of these key sections and would make for more consistency between desktop and mobile.</p>
+            <p>... and the possibility of horizontal tabbed navigation, which I felt would improve the discoverability of these key sections and would improve consistency between desktop and mobile.</p>
             <picture>
               <source
               srcset=img/ux_design/redesigning_finance_website/iterating_and_testing_1@2x.gif
@@ -284,8 +279,7 @@
               The user testing revealed that the
               <b>horizontal tabbed navigation</b>
               had a higher ease of completion rating of 4.6 out 5 (compared to
-              4.17 out of 5). So, after a few tweaks to the design, we were able to present our findings to the business and convinced them to move in this direction going
-              forward.
+              4.17 out of 5). So, after a few further tweaks to the design, we were able to present our findings to the business and validate our suggestion.
             </p>
           </div>
         </div>
@@ -296,9 +290,9 @@
         <div class="hero-left">
           <h2 class="h2-accent">4. Visual design</h2>
 
-          <h3>Giving feedback</h3>
+          <h3>Collaborating</h3>
           <p>
-            The UI Designer then did a great first iteration of the visual design.
+            The agency's UI Designer then did a great first iteration of the visual design.
           </p>
      
           <picture>
@@ -310,11 +304,13 @@
             alt="The ugly old website">
           </picture>
           <p>
-            We worked together to improve some areas, especially accessibility (some 12px font sizes had crept in!).
+            I gave input to ensure that accessibility was considered, as some 12px font sizes had crept in.
               </p>
               <p>
-               We followed a similar process throughout the planning stage of the project, until we had mockups for all the key areas of the site. It was then time to move onto the build stage...
+                It was then my job to take all the mockups, create a Figma component library, improve consistency (in areas like interaction states), and brief the engineers...
                   </p>
+                  <a class="button2" href="developing-finance-website-ux-designer.html"
+                  >Learn about the development process</a>
         </div>
       </div>
         <div class="container">
