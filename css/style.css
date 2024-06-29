@@ -1,4 +1,5 @@
 :root {
+  --accent300: #6e1800;
   --accent150: #af3713;
   --accent120: #d14319;
   --accent: #f24e1e;
@@ -43,6 +44,10 @@ i.fa-arrow-up-right-from-square {
   font-size: 1rem;
 }
 
+span > i.fa-solid {
+  padding-right: 0.5rem;
+}
+
 span.tag {
   background-color: var(--accent20);
   color: var(--accent90);
@@ -57,6 +62,18 @@ span.tag {
   vertical-align: middle;
   margin-right: 0.75rem;
   border: solid var(--accent60) thin;
+}
+
+.learning-point {
+  border-left: solid var(--accent120) medium;
+  padding-left: 1rem;
+  color: var(--accent120);
+  margin-bottom: 2rem;
+}
+
+.learning-point p {
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
 nav > ul {
