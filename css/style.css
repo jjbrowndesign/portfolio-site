@@ -1,8 +1,11 @@
 :root {
+  --accent150: #af3713;
+  --accent120: #d14319;
   --accent: #f24e1e;
   --accent90: #f56a40;
   --accent60: #f5a893;
   --accent30: #fcd5ca;
+  --accent20: #fbe8e2;
   --accent10: #fafafa;
   --background: #f5f5f5;
   --white: #ffffff;
@@ -24,10 +27,36 @@ img {
   margin-top: 20px;
 }
 
+video {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .logo {
   max-width: 200px;
   padding-top: 0px;
   margin-top: 0.1em;
+}
+
+i.fa-arrow-up-right-from-square {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+span.tag {
+  background-color: var(--accent20);
+  color: var(--accent90);
+  font-size: 0.85rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  font-family: "Avenir Next", sans-serif;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+  border: solid var(--accent60) thin;
 }
 
 nav > ul {
