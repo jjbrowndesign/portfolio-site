@@ -152,7 +152,9 @@
             Context
           </h2>
       <p><b>Time period:</b> July 2022 – December 2022</p>
-      <p><b>Role:</b> UX/UI Designer, working in-house alongside an agency</p>
+      <p><b>Role:</b> In-house UX/UI Designer. Working alongside an in-house UX Researcher. With support from a UX Lead and an agency UI Designer.</p>
+      <p><b>Problem:</b> The company had seen a huge growth in the number of investors using its website during Covid. As the website came under increased scrutiny from new users who hadn't learned its unique patterns, the issues with consistency, navigation and accessibility were proving hard to ignore.</p>
+      <p><b>Opportunity:</b> The Brand team were also working on a rebrand, so this became a perfect opportunity to apply a minimalist, clean UI to the site, maximising the benefits of the <a href="https://lawsofux.com/aesthetic-usability-effect/" target="_blank" rel="noopener noreferrer">aesthetic-usability effect</a>.</p>
       </div>
     </div>
 
@@ -160,16 +162,24 @@
         <!-- Part 1 -->
         <div class="hero-left">
           <h2 class="h2-accent">1. Identifying the problems</h2>
-          
+          <p>
+            When I first joined the company, I conducted a heuristic evaluation of the site based on my knowledge of user-centred design principles. I then analysed HotJar clickmaps and my Research colleague watched user testing videos. We came to the same conclusions...
+          </p>
           <h3>Consistency</h3>
           <p>
-            Sitewide consistency was poor, leaving the user to learn new
-            patterns and UI elements on every page.
+          <b>Sitewide consistency was poor, leaving the user to learn new
+            patterns on every page.</b>
           </p>
           <p>
-            For example, pages were frequently dominated by a ‘multigrid’ of equal-sized tiles; when clicked, these tiles would sometimes take
+            This goes against Nielsen Norman Group's principle of <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener noreferrer">consistency and standards</a>.
+          </p>
+          <p>
+            For example, pages were frequently dominated by grids of equal-sized tiles. When clicked, these tiles would sometimes navigate
             users to a subpage, sometimes take them to a different section of the site, sometimes open up a PDF, and sometimes do
-            nothing at all.
+            nothing at all!
+          </p>
+          <p>
+            But there were no signifiers to suggest to the user which did which...
           </p>
           <picture>
             <source
@@ -179,20 +189,21 @@
             src=img/ux_design/redesigning_finance_website/multigrid@1x.gif
             alt="A video of a user hovering over a handful of unclear image boxes that seem to have links to elsewhere.">
           </picture>
-          
-          <p>
-            We saw confusion about this time and time again on HotJar clickmaps and UserTesting
-            videos.
+          <p class="action-points">
+            → We therefore decided to move away from these misleading UI elements, creating bespoke components for links (following recognisable patterns from other websites) and for documents (with signifiers to differentiate them for the user).
           </p>
 
+
           <h3>Navigation</h3>
-          <p>Previously there had been nobody to
-          'gatekeep' areas like navigation menus to make sure user experience was championed alongside competing business goals.</p>
           <p>
-            With no logical Information Architecture to organise content, the
-            main navigation bar held 11 items at times: stuffed full of niche projects, short-lived
-            events and links to external microsites.
-          </p>
+            <b>Navigation was cluttered, illogical and inconsistent.</b></p>
+            <p>
+              The
+              main navigation bar held 11 items at times: stuffed full of niche projects, short-lived
+              events and links to external microsites.
+            </p>
+            <p>Previously there had been nobody to
+          'gatekeep' areas like navigation menus to make sure user experience was championed alongside competing business goals.</p>
           <picture>
             <source
             srcset=img/ux_design/redesigning_finance_website/identifying_problems@2x.jpg
@@ -201,34 +212,41 @@
             src=img/ux_design/redesigning_finance_website/identifying_problems@2x.jpg
             alt="The ugly old website">
           </picture>
-
+          <p class="action-points">
+            → It was clear we needed to set up a tree test or card-sorting exercise to establish a logic Information Architecture. And, once established, we would need to be more protective of this menu in future.
+          </p>
           <h3>Accessibility and inclusivity</h3>
           <p>
-            Meanwhile, everywhere you looked, there were accessibility issues: from the standard body text size of 14px to the
-            regular use of white/black text over images without an appropriate background overlay or outline.
+            <b>Everywhere you looked, there were accessibility issues.</b></p>
+            <p>For example:
+            <ul>
+              <li>The body text size was 14px, rather than the <a href="https://www.a11y-collective.com/blog/wcag-minimum-font-size/" target="_blank" rel="noopener noreferrer">recommended minimum of 16px</a>.</li>
+              <li>There was white or black text over images without an <a href="https://www.smashingmagazine.com/2023/08/designing-accessible-text-over-images-part1/" target="_blank" rel="noopener noreferrer">appropriate overlay or outline</a>.</li>
+              <li>HTML heading tags were not used or were given a wrong hierarchy.</li>
+              <li>Images didn't have alt text.</li>
+              <li>Aria-labels were nonexistant.</li>
+            </ul>
           </p>
-          <p>
-           Behind the scenes, images didn't have alt text, HTML heading classes were misused, and aria-labels were nonexistant.
+          <p class="action-points">
+            → As well as adding all of these improvements into our designs, we also made sure to collaborate with teams elsewhere in the business; for example, I worked with colleagues in Brand to improve colours in charts, ensuring good contrast and differentiation.
           </p>
-          <p>
-I therefore set about collaborating with other areas of the business. I worked with my Graphic Design and Brand colleagues to improve colour contrast in their charts, and I learnt from the neurodiversity community about autoplaying videos and distracting animations.</p>
 
         </div>
         <!-- Part 2 -->
         <div class="hero-left">
-          <h2 class="h2-accent">2. Prototyping and testing at pace</h2>
+          <h2 class="h2-accent">2. Solving the problems</h2>
+          <h3>Refocusing on the user</h3>
           <p>
             The company had only just set up its UX team. So, when we arrived, the project was already
             partway through an unstructured discovery process that had unfortunately failed to engage with users and their problems.
-          </p>
-          <h3>Refocusing on the user</h3>
+          </p>          
           <p>
-            As a team, we ran week-long sprints to rapidly prototype and test design proposals based on analytics and UX best practices.
-          </p>
-          <p>
-            At the start of each week, I would rapidly create a handful of wireframes and we would discuss
-            their relative merits.</p>
+            As a team, we took the decision to run weekly test-and-learn sprints, so we could refocus the process back on the user without slowing the project down.</p>
+            <h3>Prototyping and testing</h3>
 
+            <p>At the start of each week, I would use tools like <a href="https://mobbin.com/browse/web/ui-elements" target="_blank" rel="noopener noreferrer">Mobbin</a> and conduct some competitor analysis to create a handful of wireframes that might solve the problems relevant to that page.</p>
+            <p>These were created and prototyped in Figma (which I'm luckily pretty fast at using).</p>
+            <p>For example, I proposed three different styles of filtering for our investment strategies page:</p>
             <picture>
               <source srcset=img/ux_design/redesigning_finance_website/strategies-grid-all-v123@2x.gif
               media="(max-width:767px)"> <img id="single-hero-img"
@@ -236,28 +254,35 @@ I therefore set about collaborating with other areas of the business. I worked w
               src=img/ux_design/redesigning_finance_website/strategies-grid-all-v123@2x.gif alt="Hotjar
               click results showing popular clicks far down the page">
             </picture>
-                        
-            <p>Then our amazing UX Researcher set up
-            unmoderated user tests on UserTesting to get feedback on the two most promising options. I would then assess her findings and (if necessary) make iterative tweaks to the most successful version, before presenting it back to the project group.
+            <p>The team would discuss
+            their relative merits and select two especially promising options.</p>    
+            <p>Next, our amazing UX Researcher would set up
+            unmoderated usability tests on UserTesting. We would then assess the findings and data to conclude which design to progress, and I would make iterative tweaks based on any important user feedback.</p>
+            
+            <h3>Presenting validated designs to stakeholders</h3>
+            <p>I would then present it back to the wider project group, and the Researcher would provide the accompanying research results to back up our designs.
           </p>
+          <p>This collaborative approach took a lot of hard work and trust, as we had to work quickly and relied on each other to keep the process moving.</p>
+        <p>But it meant we were able to embed user research back into a process that had almost forgotten about its users! It allowed us to demonstrate to the business the importance of validating designs, and we managed to keep up the pace of the project too.</p>
         </div>
       </div>
 
       <!-- Part 3 - Highlight section -->
       <div class="container">
         <div class="hero" id="pale-accent">
-          <p class="key-points">- Project highlight -</p>
-          <h2 class="h2-accent">3. Learning from users</h2>
+          <h2 class="h2-accent">Testing new navigation</h2>
           <div class="hero-text">
-            <h3>Discoverability</h3>
+            <h3>Discoverability problems</h3>
             <p>
               I had concerns that our core products (investment funds) were presented on incredibly
               dense pages.
+              <p>I also analysed the scroll depth to reveal that users were giving up on scrolling down the <b>long!</b> page. And interviews with users suggested they were struggling to identify important items due to the poor text hierarchy...</p>
               </p><p>To check this hypothesis, I indentified some key content (factsheets, ISIN numbers and portfolios) through Hotjar click maps and stakeholder input.</p>
-                <p>Then we conducted some testing, which revealed that users were indeed failing to find this content. In some cases, this was no doubt due to 
+                <p>We conducted some testing, which revealed that users were failing to find this content. In some cases, this was no doubt due to 
                 <a
                   href="https://www.nngroup.com/articles/fight-right-rail-blindness/" target="_blank" rel="noopener noreferrer"
-                  >sidebar blindess</a>, as crucial items were hidden in grey boxes on the side of the page.</p><p>I also analysed the scroll depth to reveal that users were giving up on scrolling down the <b>long!</b> page. And interviews with users suggested they were struggling to identify important items due to the poor text hierarchy...
+                  >sidebar blindness</a>, as this information had been put in grey containers on the side of the page.</p>
+                  
           </div>
 
           <picture>
@@ -269,9 +294,8 @@ I therefore set about collaborating with other areas of the business. I worked w
           </picture>
 
           <div class="hero-text">
-            <h3>Navigation</h3>
             <p>
-              Navigation was clearly something we needed to solve urgently. So I created more prototypes so we could test the agency's proposed vertical tabbed navigation...
+              Navigation was clearly something we needed to solve urgently. So I created prototypes for a vertical tabbed navigation...
             </p>
 
             <picture>
@@ -285,7 +309,7 @@ I therefore set about collaborating with other areas of the business. I worked w
           </div>
 
           <div class="hero-text">
-            <p>... and the possibility of horizontal tabbed navigation, which I felt would improve the discoverability of these key sections and would improve consistency between desktop and mobile.</p>
+            <p>... and a horizontal alternative. I felt this might improve the discoverability of these key sections and improve consistency between desktop and mobile, but I was keen to hear what users thought.</p>
             <picture>
               <source
               srcset=img/ux_design/redesigning_finance_website/iterating_and_testing_1@2x.gif
@@ -297,6 +321,8 @@ I therefore set about collaborating with other areas of the business. I worked w
           </div>
 
           <div class="hero-text">
+            <h3>Research outcomes</h3>
+
             <p>
               The user testing revealed that the
               <b>horizontal tabbed navigation</b>
@@ -310,11 +336,11 @@ I therefore set about collaborating with other areas of the business. I worked w
       <div class="container" id="project-highlights">
         <!-- Part 4 -->
         <div class="hero-left">
-          <h2 class="h2-accent">4. Visual design</h2>
+          <h2 class="h2-accent">3. Applying a minimalist UI</h2>
 
           <h3>Collaborating</h3>
           <p>
-            The agency's UI Designer then did a great first iteration of the visual design.
+            The agency's UI Designer then did a great first iteration of the visual design, bringing the brand to life:
           </p>
      
           <picture>
@@ -326,21 +352,40 @@ I therefore set about collaborating with other areas of the business. I worked w
             alt="The ugly old website">
           </picture>
           <p>
-            I gave input to ensure that accessibility was considered, as some 12px font sizes had crept in.
+            It was at this stage that I set down some key accessibility and usability requirements, based on our early heuristic evalution. For example, there was no typographic hierarchy, the button states were inconsistent, and some inaccessible font sizes had crept in.
               </p>
-              <p>
-                It was then my job to take all the mockups, create a Figma component library, improve consistency (in areas like interaction states), and brief the engineers...
-                  </p>
-                  <a class="button2" href="developing-finance-website-ux-designer.html"
-                  >Next: the development process</a>
         </div>
       </div>
+
         <div class="container">
+          <div class="hero-left row">
+                <p class="key-points">
+                It was then my job to take this visual design template, fix some inconsistencies, and ultimately create a Design System...
+                  </p>
+                  <a class="button2" href="creating-design-system-ux-designer.html"
+                  >2. Creating a Design System</a>
+                </div>
+              </div>
+
+                
+                <div class="container">
+
+                <div class="hero-left row">
+                    <p class="key-points">
+                   At the same time, I also annotated designs, briefed developers, found compromises, and guided the build process...
+                      </p>
+                      <a class="button2" href="developing-finance-website-ux-designer.html"
+                      >3. Guiding development</a>
+                  </div>
+                </div>
+
+      <div class="container">
           <div class="hero" id="pale-accent">
             <p><b>Looking to hire a UX Designer with experience testing and iterating designs on a fast-paced redesign project?</b></p>
             <a class="button" href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
               >Send me an email</a>
           </div>
+        </div>
   
 
     </main>

@@ -254,6 +254,12 @@ ul {
   font-weight: 500;
 }
 
+.action-points {
+  font-weight: 400;
+  color: #025382;
+  padding-bottom: 1rem;
+}
+
 p.key-points {
   padding-top: 0.5em;
   padding-bottom: 0em;
@@ -636,6 +642,12 @@ Medium devices (752px or larger)
 
   header {
     padding: 0.5em 0 0.5em;
+  }
+
+  .two-halves {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .col-lg-3 {
