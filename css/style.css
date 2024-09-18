@@ -76,6 +76,10 @@ span.tag {
   font-size: 1rem;
 }
 
+li > a {
+  text-decoration: underline;
+}
+
 nav > ul {
   list-style-type: none;
   margin: 0;
@@ -88,6 +92,7 @@ nav > ul > li > a {
   color: var(--black);
   margin-left: 23px;
   margin-right: 15px;
+  text-decoration: none;
 }
 
 nav > ul > li > a.current-nav {
@@ -250,8 +255,8 @@ ul {
 }
 
 .action-points {
-  font-weight: 400;
-  color: #025382;
+  font-weight: 500;
+  color: var(--accent150);
   padding-bottom: 1rem;
 }
 
