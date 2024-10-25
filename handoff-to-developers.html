@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Handing designs off to developers</title>
+
+    <link
+      rel="canonical"
+      href="http://jjbrowndesign.uk/handoff-to-developers.html"
+    />
+
+    <link href="img/logos/favicon-accent.ico" rel="shortcut icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K7WVHH5LJ2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K7WVHH5LJ2");
+    </script>
+
+<script src="https://kit.fontawesome.com/86faccdcc5.js" crossorigin="anonymous"></script>
+
+    <meta
+      name="description"
+      content="Guiding development and finding compromises to balance business and user goals."
+    />
+
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="img/logos/jeremybrown_logo.svg"
+              alt="J J Brown Design logo"
+            />
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="current-nav" href="case-studies.html">Case studies</a></li>
+              <li>
+                <a
+                  href="https://medium.com/@jjbrowndesign"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blog
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </li>
+              <li>
+                <a
+                  href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch"
+                  class="button-secondary"
+                  >Get in touch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <div class="hero">
+        <p class="key-points"><a href=case-studies.html>← Case studies</a></p>
+        <div class="hero-text">
+          <h1>Handing designs off to developers</h1>
+
+          <p class="subheading-accent">
+            Finding design compromises to balance business and user goals.
+          </p>
+          <p>
+            Establishing an annotation system, clarifying behaviours and animations, writing user stories, collaborating with developers to solve problems, and championing key user needs.
+          </p>
+        </div>
+
+        <div>
+          <picture>
+            <source srcset=img/ux_design/handoff_to_developers/detailed_mockups_macro@2x.png
+            media="(max-width:767px)"> <img class="hero-img"
+            src=img/ux_design/handoff_to_developers/detailed_mockups_macro@2x.png
+            alt="A set of mockups on Figma">
+          </picture>
+        </div>
+      </div>
+
+            <!-- Context -->
+            <div class="container">
+              <div class="hero-left">
+                <h2 class="h2-accent">
+                  Context
+                </h2>
+            <h3>Time period</h3>
+            <p>February 2023 – June 2024</p>
+            <h3>Team</h3>
+            <ul>
+              <li id="dark-accent-text">UX UI Designer (me!)</li>
+                <li>2-4 Full-Stack Developers</li>
+                  <li>1-3 Business Analysts</li>
+                </ul>
+            </div>
+          </div>
+
+      <div class="container">
+        <!-- Part 1 -->
+        <div class="hero-left">
+          <h2 class="h2-accent">1. Preparing Figma for developers</h2>
+
+          <h3>Creating true Figma components</h3>
+          <p>
+            After the key designs of the website redesign project had been established (<a href="redesigning-finance-website.html">get the full story here</a>), I took the designs, recreated them using proper Figma components, <a href="creating-design-system.html">created a design system</a>, and built mockups for pages in Figma.</a>
+          </p>
+          <h3>Writing annotations</h3>
+          <p>
+            I established an annotation system as I felt it was important and efficient to clearly explain design decisions like interaction states, behaviours and animations before devs get involved, to save them time.</p>
+          </p>
+          <p><i>I can't show examples of this work due to privacy, but it was based on Femke van Schoonhoven's excellent YouTube content.</i></p>
+          <p>
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/PK8dLpwSqbw?si=ud8cL3iMxRLg-nUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </p>
+          <h3>Creating user stories</h3>
+          <p>
+            I then worked with business analysts to translate these annotations into detailed user stories in Azure DevOps (similar to Jira) using Given-When-Then acceptance criteria.</p>
+            <p>Being involved in this process helped make sure that the UX team were guiding development and setting accessibility and functionality expectations for the later test and UAT phases.
+          </p>
+          <div class="learning-point"><span class="tag"><i class="fa-solid fa-graduation-cap"></i></i>Development point</span>
+            <p>I'm excited to use Figma's new Dev Mode to make this process even more detailed and efficient in future.</p>
+            </div>
+          
+        </div>
+      </div>
+
+      <div class="container">
+               <!-- Part 2 -->
+               <div class="hero-left">
+                <h2 class="h2-accent">2. Revising designs</h2>
+                <h3>Collaborating with cross-functional teams</h3>
+                <p>
+                  To keep up the pace of the project, I tried to help find design compromises to meet improve velocity while meeting business goals and championing the user (and accessibility, in particular).
+                </p>
+                <p>For example, we had a multi-functional dropdown that allowed users to sort an investment fund alphabetically by share class, distribution type or currency. This had been designed to be future-proof for some of our more complex funds, which had up to 15 options.
+                </p>
+                  <p>
+                    Throughout the project, I made sure to always be available for ad-hoc calls from developers.</p>
+                    <p>This time, when discussing the dropdown with a dev, he cautioned that adding this sorting functionality would take considerably longer.</p>
+                      <p>So I decided to analyse the data, and I concluded that this functionality would probably be overkill for three-quarters of the funds.
+                    <a href="https://lawsofux.com/millers-law/" target="_blank" rel="noopener noreferrer">Miller's Law</a> tells us that users can keep around 7 items in their mind at a time, so I was happy that users should be okay dealing with all funds with fewer than 7 options.</p>
+                    <p>That just left a handful of funds with more than 7 options.</p>
+
+                    <h3>Finding design compromises</h3>
+
+                  <p>I quickly mocked up a simplified version with no sorting, to see how it would look:
+                  </p>
+                  <picture>
+                    <source
+                    srcset=img/ux_design/handoff_to_developers/investment_choices_before_and_after@2x.png
+                    media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max"
+                    src=img/ux_design/handoff_to_developers/investment_choices_before_and_after@2x.png
+                    alt="The shareclass dropdown with multiple complex functionalities, and then a variant using a simple list.">
+                  </picture>
+                  <p>Looking at the mockup, I was satisfied that the content looked logical, as they mostly differed only by currency which looked easily scannable for users.</p>
+                    <p>But I spoke to my UX Researcher and asked her to cover this on a usability test that we would run when the page is live.</p>
+
+                  <h3>Making informed changes</h3>
+                    <p>It only took a few hours for me to create the new mockup and think through the logic, but it saved many hours of valuable developer time – and (importantly) it shouldn't have a negative impact on the user.
+                    </p>
+              </div>
+      </div>
+
+      <div class="container">
+        <div class="hero" id="pale-accent">
+      <p class="key-points">
+        It was then my job to create a design system, complete with documentation...        </p>
+        <a class="button-secondary" href="creating-design-system.html"
+        >Next: Building the design system</a>
+      </div>
+  
+
+    </main>
+
+    <footer>
+      <!-- Contact section -->
+      <div class="container" id="footer-content">
+        <p id="attribution">Site coded by me using HTML, CSS and Javascript!</p>
+
+        <!-- LinkedIn icon link -->
+
+        <a href="https://linkedin.com/in/jjbrowndesign"  target="_blank" rel="noopener noreferrer">
+          <img
+            class="social"
+            src="img/social_icons/icons8-linkedin.svg"
+            alt="Find me on LinkedIn"
+           
+          />
+        </a>
+
+        <!-- Medium link -->
+
+        <a href="https://medium.com/@jjbrowndesign" target="_blank" rel="noopener noreferrer">
+          <img
+            class="social"
+            src="img/social_icons/icons8-medium.svg"
+            alt="Read my blog on Medium"
+          />
+        </a>
+
+        <p id="attribution">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
