@@ -11,6 +11,8 @@
   --background: #f5f5f5;
   --white: #ffffff;
   --offwhite: #f5f5f5;
+  --grey30: #e0e0e0;
+  --grey40: #bdbdbd;
   --dark-text: #171f34;
   --black: #000000;
 }
@@ -21,6 +23,30 @@
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  padding: 0.5em 0 0.5em;
+  position: fixed;
+  vertical-align: middle;
+  width: 100%;
+  background-color: var(--white);
+}
+
+main {
+  padding-top: 40px;
+  /* Was 127px before nav menu changes 23.01.21 */
+  /* Changed from 53px to 43px when banner added 12.12.21 */
+  /* Changed back to 53px 25.01.22 */
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Avenir Next", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--dark-text);
 }
 
 img {
@@ -202,7 +228,7 @@ li {
 }
 
 #pale-accent {
-  background-color: var(--accent10);
+  background-color: var(--white);
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 32px;
@@ -226,28 +252,51 @@ li {
   margin-bottom: 40px;
 }
 
-header {
-  padding: 0.5em 0 0.5em;
-  position: fixed;
-  vertical-align: middle;
+.accordion {
+  background-color: var(--white);
+  color: var(--dark-text);
+  cursor: pointer;
+  padding: 16px;
+  font-weight: 500;
   width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div .accordion-container {
+  margin-bottom: 48px;
+}
+
+.accordion i.fa-caret-up {
+  display: none;
+}
+
+.accordion:hover {
+  background-color: var(--grey30);
+}
+
+.active-accordion {
   background-color: var(--white);
 }
 
-main {
-  padding-top: 40px;
-  /* Was 127px before nav menu changes 23.01.21 */
-  /* Changed from 53px to 43px when banner added 12.12.21 */
-  /* Changed back to 53px 25.01.22 */
+.active-accordion i.fa-caret-down {
+  display: none;
 }
 
-body {
+.active-accordion i.fa-caret-up {
+  display: flex;
+}
+
+.panel {
+  padding: 0 16px;
   background-color: var(--background);
-  font-family: "Avenir Next", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--dark-text);
+  display: none;
+  overflow: hidden;
 }
 
 .row {
