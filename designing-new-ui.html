@@ -126,10 +126,7 @@
         <div class="hero-text">
           <h1>Designing UI for a new feature</h1>
           <p class="subheading-accent">
-            Redesigning a feature from the ground up, in the spirit of continuous improvement.
-          </p>
-          <p>
-            Independently creating new UI to solve a user pain point, focusing on modern visual design and clear interactions. Making sure to get validation through usability testing.
+            Learning from failure, redesigning a feature from the ground up based on user testing
           </p>
         </div>
 
@@ -148,18 +145,26 @@
         <div class="hero-left">
           
           <h2 class="h2-accent">
-            Context
+            About the project
           </h2>
+          <h3>My role</h3>
+          <p>
+            <ul><li>Solving a user pain point by creating clear new UI.
+              <li>Following brand guidelines and focusing on modern visual design.
+                <li>Getting validation through usability testing.
+                </ul>
+          </p>
       <h3>Time period</h3>
         <p>March 2024</p>
         <h3>Team</h3>
         <ul>
-        <li>UX Researcher</li>
-          <li id="dark-accent-text">UX UI Designer (me!)</li>
+        <li>UX researcher</li>
+          <li id="dark-accent-text">UX UI designer <i>(me)</i></li>
           </ul>
         </p>
       <h3>Problem</h3>
-              <p>During our testing of the 404 page, the UX Researcher noticed that users in certain locations were facing difficulty in using the audience selector. 4 out of 10 users could not complete the task! It seemed as though there was an issue with the visibility of the buttons.</p>
+              <p>While testing a different feature, the UX Researcher noticed that users in certain locations were facing difficulty completing our 'audience selector' as part of site entry. 4 out of 10 users could not complete the task!</p>  
+              <p>It seemed as though there was an issue with button visibility...</p>
       </div>
     </div>
 
@@ -169,10 +174,11 @@
           <h2 class="h2-accent">1. Identifying the problem</h2>
           <p>
             The audience selector is a component allowing users to change their location (e.g. UK) and their user type (e.g. Professional investor or Individual investor).</p>
-            <p>When originally tested during the <a href="redesigning-finance-website.html">redesign project</a>, no issues had come up. But it seemed as though it hadn't been tested with locations where there was just one user type to select.</p>
+            <h3>Watching usability tests</h3>
+ 
+            <p>When originally tested, no issues had come up. But it hadn't been tested in scenarios where there was just one user type available.</p>
           </p>
-          <h3>Watching usability tests</h3>
-          <p>Users weren't realising that they needed to click 'Professional investor' to proceed, and so were desperately clicking elsewhere:
+          <p>Users weren't realising that they needed to click 'Professional investor' to proceed, and so were desperately clicking other areas:
           </p>
             <picture>
             <source
@@ -194,7 +200,7 @@
           <h2 class="h2-accent">2. Testing a simple approach</h2>
           <h3>Creating prototypes</h3>
           <p>
-I started by creating a few simple UI tweaks to see if we could make a significant difference with minimal dev time.</p>
+I started by creating a few simple UI tweaks to see if we could make a significant difference with minimal dev time, while still trying to keep within the minimalist, monochrome brand guidelines.</p>
 <p> For one version, I increased the font size for the button label text, and added a grey stoke around the buttons:        </p>         
 <picture>
             <source
@@ -204,7 +210,7 @@ I started by creating a few simple UI tweaks to see if we could make a significa
             alt="A screenshot showing one new mockup, including a much bigger font for the text and a grey stroke added around the white buttons.">
           </picture>
         <p>
-In the other version, I used more eye-catching background colours for the buttons (while still trying to keep within the minimalist brand guidelines):
+In the other version, I used more eye-catching background colours for the buttons:
 </p>          
 <picture>
             <source
@@ -215,16 +221,16 @@ In the other version, I used more eye-catching background colours for the button
           </picture>
           <p>These were then set up as prototypes in Figma, ready for testing.</p>
           <h3>Testing</h3>
-          <p>The UX Researcher set up an unmoderated test and both options performed okay, with 83% of participants completing the task, but this wasn't enough for such a core functionality.</p>
-          <p>Users seemed to be looking for a way to actively apply or save the changes. And some of them were now not following the intended sequence, which added some friction.</p>
+          <p>Both options performed okay in testing, with 83% of participants completing the task, but we wanted to do better for such core functionality.</p>
+          <p>Users seemed to be looking for a way to apply or save the changes. And the component required users to make their selection in a specific order, which added some friction.</p>
 
           <h2 class="h2-accent">3. Starting from scratch</h2>
           <p>
-            So I went back to square one and imagined what I'd have done if I'd been working on the component from the start...</p>
+            So I thought about what I'd have done if I'd designed the component from the start...</p>
             
           <h3>Competitor analysis</h3>
           <p>
-After taking another look at the user research and available analytics, I conducted some competitor analysis and saw a few examples of sites using <a href="https://www.nngroup.com/articles/progressive-disclosure/" target="_blank"
+After taking another look at the available analytics, I conducted some competitor analysis and saw a few examples of sites using <a href="https://www.nngroup.com/articles/progressive-disclosure/" target="_blank"
 rel="noopener noreferrer">progressive disclosure</a> to good effect, following a step-by-step process and only showing the information relevant to the user at each stage:</p>
   <picture>
     <source
@@ -242,27 +248,25 @@ rel="noopener noreferrer">progressive disclosure</a> to good effect, following a
     src=img/ux_design/designing_new_ui/competitor_confirm_button.png
     alt="A screenshot from Aviva showing four radio button options and then a confirmation button.">
   </picture>
-            <p>I discussed these options with fellow designers and we concluded that - although the confirmation button would add another click - it was worth it to make sure users knew how to proceed. And similarly, we agreed the use of progressive disclosure would keep things simple for users, reducing cognitive load.</p>
             <h3>Creating and prototyping new UI</h3>
-            <p>So I set about redesigning the component, introducing a clearer step-by-step process with less room for misunderstanding, and an overhauled visual design.</p>
-            <ul> 
-            <li>I changed the UI of the active section to use dark colours that stood out against the white default states, so the user knew what to focus on.</li>
-              <li>I created consistency between the location and investor type selection styles through the use of radio buttons, to create a clear pattern for the user.</li>
-              <li>I added a clear 'Confirm' button at the end of the process, so users were in no doubt about the final step.</li>
-              <li>And I included disabled states to secondary buttons to focus the user on the primary goal.</li>
-            </ul>
-            <p>When building the Figma prototypes, I set up a number of interaction possibilities to make sure we catered for all the various potential user flows.</li>
-              <p>I shared them with my colleagues in a Design Crit and received some useful feedback that led to a few tweaks.</li>
-              <picture>
-              <source
-              srcset=img/ux_design/designing_new_ui/final_audience_selector@2x.gif
-              media="(max-width:767px)"> <img class="case-study-img"
-              src=img/ux_design/designing_new_ui/final_audience_selector@2x.gif
-              alt="A video of a step-by-step audience selector with accordions that expand and change to a clear active state when clicked.">
-            </picture>
+            <p>So I set about creating a new mockup of the component, introducing a clearer step-by-step process and an overhauled visual design.</p>
+
+            <div class="accordion-container">
+              <button class="accordion">What did I change?<i class="fa-solid fa-caret-down" aria-hidden="true"></i><i class="fa-solid fa-caret-up" aria-hidden="true"></i></button>
+              <div class="panel" style="display: none;">
+                <p><ul> 
+                  <li>I changed the active state to a dark colour that stood out against the white default states, so it caught the user's eye.</li>
+                    <li>I created consistency between the location and investor type selection styles through the use of radio buttons.</li>
+                    <li>I added a clear 'Confirm' button at the end of the process.</li>
+                    <li>I included disabled states to secondary buttons to add clarity.</li>
+                  </ul></p>
+              </div>
+            </div>
+
+              <p>I shared the Figma prototypes in a Design Crit and made a few tweaks based on feedback.</li>
             <h3>Testing and validating</h3>
-            <p>All 6 participants, with a healthy average age of 46.5 years, successfully accomplished the given tasks. The perceived ease rating was a conclusive 4.8 out of 5.</p>
-            <p>The qualitative user feedback was also supportive, with quotes like: <b>"the process couldn't be any better"</b> and <b>"self-explanatory and easy to interact"</b>.</p>
+            <p>All 6 participants successfully accomplished the task. Their perceived ease rating was a conclusive 4.8 out of 5.</p>
+            <p>The qualitative user feedback was positive: <b>"the process couldn't be any better"</b> and <b>"self-explanatory and easy to interact"</b>.</p>
           <p>I'm looking forward to seeing the success statistics when this is shipped on the live site!</p>
           </div>
     </div>

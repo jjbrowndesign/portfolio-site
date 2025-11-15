@@ -125,10 +125,8 @@
         <div class="hero-text">
           <h1>Creating a design system in Figma</h1>
           <p class="subheading-accent">
-            Building a responsive design system from scratch using components, properties and advanced Figma functionality. 
+            Building a responsive design system from scratch using advanced Figma functionality
           </p>
-          <p>
-            Following atomic design processes, embedding branding and accessibility, adding the latest Figma tools (e.g. variables), writing documentation and guidelines, and encouraging its use amongst the cross-functional team.</p>
             <video controls autoplay muted width="100%" height="auto">
               <source src="img/ux_design/creating_design_system/creating_design_system.mov" type="video/mp4">
             </video>
@@ -143,13 +141,20 @@
         <div class="hero-left">
           
           <h2 class="h2-accent">
-            Context
+            About the project
           </h2>
+          <h3>My role</h3>
+          <p><ul>
+            <li>Setting us up for long-term efficiency by creating reusable components, reducing wasted developer time.
+              <li>Embedding branding and accessibility.
+                  <li>Writing documentation and guidelines for the cross-functional team.
+                  </ul>
+                  </p>
       <h3>Time period</h3>
       <p>December 2022 – June 2024</p>
       <h3>Team</h3>
       <ul>
-        <li id="dark-accent-text">UX UI Designer (me!)</li>
+        <li id="dark-accent-text">UX UI designer <i>(me)</i></li>
           <li>Various developers, researchers, designers and CMS managers</li></ul>
       </div>
     </div>
@@ -161,8 +166,8 @@
           <h2 class="h2-accent">1. Starting with the brand identity</h2>
 
                      <h3>Colour and typography</h3>
-                     <p>Avoiding the temptation to rush straight to Figma, I wanted to start by establishing brand fundamentals like colour and typography, and presenting them clearly for future use.</p>
-                     <p>To put my best foot forward, I followed <a href="https://carbondesignsystem.com/elements/color/tokens" target="_blank" rel="noopener noreferrer">IBM Carbon</a>'s well-respected template for colours. As well as itemising the HEX code values, I therefore also gave a suggested variable for future use:
+                     <p>I started by establishing brand fundamentals like colour and typography, and presenting them clearly for future use.</p>
+                     <p>To put my best foot forward, I followed <a href="https://carbondesignsystem.com/elements/color/tokens" target="_blank" rel="noopener noreferrer">IBM Carbon</a>'s well-respected design system structure. As well as itemising HEX code values for colours, I supplied a suggested variable for developer use:
             </p>
               <picture>
                 <source
@@ -171,46 +176,49 @@
                 src=img/ux_design/creating_design_system/colours.png
                 alt="A screenshot of an organised list of colours with their HEX codes and examples.">
               </picture>
-            <p> In terms of typography, I took the work that the Brand team and the agency had done using our new font, Helvetica Now Display, and identified the various heading sizes that had been used so far. I then worked to add these as text styles on Figma, and to define the variations for different screen sizes.</p>
-            <h3><span class="tag"><i class="fa-solid fa-bullhorn fa-beat-fade"></i>New</span>Using new, innovative Figma functionality</h3>
-<h4>Colour variables</h4>
-              <p>I have since updated the colours further using the new "local variables" Figma tool:</p>
-                <picture>
-                  <source
-                  srcset=img/ux_design/creating_design_system/colours-local-variables.png
-                  media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max"
-                  src=img/ux_design/creating_design_system/colours-local-variables.png
-                  alt="A screenshot of the Figma local variables table, showing colours with various tokens and modes.">
-                </picture>
-                <p>This means we can change a primitive colour in a single location and that change will be applied to all uses of that colour throughout the design system.<p>
-              <p> For example, if we swap our white from #FFFFFF to a less harsh #F5F5F5, this would update the 'background-primary' and 'text-inverse' colour tokens too.
-              </p>
-
-              <h4>Typography variables</h4>
-                <p>Similarly, I have recently defined the typography using Figma's local variables, with desktop and mobile variants:
-                </p>    
-                <picture>
-                  <source
-                  srcset=img/ux_design/creating_design_system/typography-local-variables.png
-                  media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max"
-                  src=img/ux_design/creating_design_system/typography-local-variables.png
-                  alt="A screenshot of some selected text on Figma with the 'Heading 4' variable labelled next to it.">
-                </picture>
-                <p>This means that the typography can now change automatically depending on whether the frame is identified as a desktop or mobile screen size, bringing things closer to the HTML media query breakpoints that developers actually use.
-                </p>   
+            <p> In terms of typography, I interpreted the Brand team's print typography guidelines for digital, identifying the various heading sizes and adding them as text styles on Figma (complete with variations for different breakpoints).</p>
+            <div class="accordion-container">
+              <button class="accordion">            <h3><span class="tag"><i class="fa-solid fa-bullhorn fa-beat-fade"></i>Recent update</span>Adding new, innovative Figma functionality</h3>
+                <i class="fa-solid fa-caret-down"></i><i class="fa-solid fa-caret-up"></i></button>
+              <div class="panel">
+                <h4>Colour variables</h4>
+                <p>As soon as Figma's "local variables" functionality was released, I was able to implement this work inside the Figma tool:</p>
+                  <picture>
+                    <source
+                    srcset=img/ux_design/creating_design_system/colours-local-variables.png
+                    media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max"
+                    src=img/ux_design/creating_design_system/colours-local-variables.png
+                    alt="A screenshot of the Figma local variables table, showing colours with various tokens and modes.">
+                  </picture>
+                  <p>Now, we can change a primitive colour in a single location and that change will be applied to all uses of that colour throughout the design system.<p>
+                <p> For example, if we swap our white from #FFFFFF to a less harsh #F5F5F5, this would update the 'background-primary' and 'text-inverse' colour tokens too.
+                </p>
+  
+                <h4>Typography variables</h4>
+                  <p>Similarly, I have recently defined the typography using Figma's local variables, with desktop and mobile variants:
+                  </p>    
+                  <picture>
+                    <source
+                    srcset=img/ux_design/creating_design_system/typography-local-variables.png
+                    media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max"
+                    src=img/ux_design/creating_design_system/typography-local-variables.png
+                    alt="A screenshot of some selected text on Figma with the 'Heading 4' variable labelled next to it.">
+                  </picture>
+                  <p>This means that the typography can now change automatically depending on whether the frame is identified as a desktop or mobile screen size, bringing things closer to the HTML media query breakpoints that developers actually use.
+                  </p>  
+              </div>
+            </div>
+    
         </div>
 
                 <!-- Part 2 -->
                 <div class="hero-left">
                   <h2 class="h2-accent">2. Following atomic design</h2>
-                  <h3>Identifying the atoms</h3>
+                  <h3>Following atomic design principles</h3>
                   <p>
-                    I then started the design system following the principles of <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">atomic design</a> as set out by Brad Frost.
-                  </p>
-                  <p>
-I gathered the mid-fidelity wireframes that had been created in the <a href=redesigning-finance-website.html target="_blank" rel="noopener noreferrer">redesign project</a>. I then started from scratch, taking them back to individual 'atoms' like buttons and dropdowns.</p>
+I gathered the rough, mid-fidelity wireframes that had been created in the <a href=redesigning-finance-website.html target="_blank" rel="noopener noreferrer">redesign project</a>. I then started from scratch, taking them back to individual '<a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank" rel="noopener noreferrer">atoms</a>' like buttons and dropdowns.</p>
 <h3>Adding component properties</h3>
-<p>I made sure to integrate future-proofed component properties, including styles, states, widths, font colours, and variable icon instances:</p>
+<p><span class="highlight">I used future-proofed component properties, including styles, states, widths, font colours, and variable icon instances:</span></p>
 <picture>
   <source
   srcset=img/ux_design/creating_design_system/button-component-properties.png
@@ -218,14 +226,10 @@ I gathered the mid-fidelity wireframes that had been created in the <a href=rede
   src=img/ux_design/creating_design_system/button-component-properties.png
   alt="A screenshot of a button in Figma with a handful of component property toggles next to it.">
 </picture>
-<div class="learning-point"><span class="tag"><i class="fa-solid fa-graduation-cap"></i></i>Learning point</span>
-<p>I learnt a lot from this process. For example, in hindsight I should have set 'Show left icon' <b>off</b> by default as this is very infrequently used and it would have saved time when adding buttons to future components.</p>
-</div>
 
-<h3>Building out components</h3>
-  <p>Once I'd sorted out the atoms, I could turn to the molecules.</p>
-    <p>I decided to use lowercase naming for atoms (e.g. "button") and capitalisation for full molecules (e.g. "Fund Title"). This proved useful because it let Content Designers identify the components that correlated with a panel that could be used in our CMS, Umbraco.</p>
-    <p>In general, I tried to make the component properties at this level as close as possible to the realistic options available to our CMS team.</p>        
+<h3>Building out Figma components</h3>
+  <p>Once I'd sorted out the atoms, I could turn to the 'molecules', which aligned to panels in our CMS.</p>
+    <p>In general, I tried to make the component properties at this level as close as possible to the options available to our Content Management team.</p>        
     <picture>
       <source
       srcset=img/ux_design/creating_design_system/fund-title-component-properties.png
@@ -242,14 +246,19 @@ I gathered the mid-fidelity wireframes that had been created in the <a href=rede
                     <h3>Writing documentation</h3>
                     <p>
 It wouldn't be a complete design system without detailed documentation.</p>
-<p>I first looked at other design systems to decide what would work best for us. I added a "Why this component?" section to explain the UX and accessibility thinking behind the design. Then the customary "When should it be used?" and "Where on the page can it go?" to set some guidelines for future designs.</p>
-<p>I then itemised all the customisations and options that could be set on the CMS in "What are the design options?", alongside a "What are the content recommendations?" to steer all future copywriting towards good UX writing practices.</p>
+<p>I learnt from other design systems to decide what would work best for us.</p>
+<p>I added a "Why this component?" section to explain the UX and accessibility thinking behind the design. Then the customary "When should it be used?" and "Where on the page can it go?" to set some guidelines for future designs.</p>
+<p><span class="highlight">I itemised all the customisations and options that could be set on the CMS in "What are the design options?", alongside a "What are the content recommendations?" to steer all future copywriting towards good UX writing practices.</span></p>
 <h3>Encouraging design system use</h3>
 <p>There's no point to a design system if it's not used, so it was important to then introduce it to the wider team.</p>
-  <p>I led meetings with the CMS managers to take them through the design system and to learn if there were any changes I could make to help them further.</p>
-<p>For example, their feedback led me to rename the components from a traditional name (e.g. 'Accordion') to the name that they used on the CMS (e.g. 'People Panel'). Although this made the design system less tidy, it felt worth it to help encourage adoption.</p>
-<div class="learning-point"><span class="tag"><i class="fa-solid fa-graduation-cap"></i></i>Development point</span>
-  <p>I'm now working on Storybook and Zeroheight integration, to put the design system in a place where it can be easily accessed.</p>
+  <p><span class="highlight">I led meetings with the CMS managers to take them through the design system and to learn if there were any changes I could make to help their workflow.</span></p>
+  <div class="accordion-container">
+    <button class="accordion">What changes did I make?<i class="fa-solid fa-caret-down"></i><i class="fa-solid fa-caret-up"></i></button>
+    <div class="panel">
+      <p>For example, their feedback led me to rename the components from a traditional name (e.g. 'Accordion') to the name that they used on the CMS (e.g. 'People Panel'). Although this made the design system less tidy, it felt worth it to help encourage adoption.</p>
+    </div>
+  </div>
+  <p>The next thing to work on is Storybook and ZeroHeight integration, to put the design system somewhere it can be seen by all.</p>
   </div>
         </div>
        

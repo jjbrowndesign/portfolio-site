@@ -5,6 +5,7 @@
   --accent: #f24e1e;
   --accent90: #f56a40;
   --accent60: #f5a893;
+  --accent40: #fbc2b2;
   --accent30: #fcd5ca;
   --accent20: #fbe8e2;
   --accent10: #fafafa;
@@ -254,7 +255,7 @@ li {
 
 .accordion {
   background-color: var(--white);
-  color: var(--dark-text);
+  color: var(--accent90);
   cursor: pointer;
   padding: 16px;
   font-weight: 500;
@@ -262,14 +263,15 @@ li {
   border: none;
   outline: none;
   transition: 0.4s;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 div .accordion-container {
-  margin-bottom: 48px;
+  margin-top: 24px;
+  background-color: var(--white);
 }
 
 .accordion i.fa-caret-up {
@@ -277,11 +279,13 @@ div .accordion-container {
 }
 
 .accordion:hover {
-  background-color: var(--grey30);
+  background-color: var(--accent60);
+  color: var(--dark-text);
 }
 
 .active-accordion {
-  background-color: var(--white);
+  background-color: var(--accent40);
+  color: var(--dark-text);
 }
 
 .active-accordion i.fa-caret-down {
@@ -294,9 +298,10 @@ div .accordion-container {
 
 .panel {
   padding: 0 16px;
-  background-color: var(--background);
+  background-color: var(--white);
   display: none;
   overflow: hidden;
+  margin-bottom: 24px;
 }
 
 .row {
@@ -364,6 +369,18 @@ footer {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-left h2 {
+  margin-top: 40px;
+}
+
+.hero-left h3 {
+  margin-top: 40px;
+}
+
+ul {
+  margin-top: 0px;
 }
 
 #testimonials {
@@ -463,17 +480,38 @@ h2 {
   font-weight: 500;
   color: var(--accent);
   padding-top: 16px;
+  padding-bottom: 0px;
 }
 
 h3 {
   font-size: 1.3em;
   margin-top: 8px;
+  font-weight: 600;
   margin-bottom: 8px;
-  padding-top: 8px;
+  padding-top: 16px;
+}
+
+.hero-left h2 + h3 {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.15em;
+  font-family: "Avenir Next", sans-serif;
+  margin-bottom: 6px;
+  color: var(--accent150);
+}
+
+.highlight {
+  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=dee4fc);
+  margin: -2px -6px;
+  padding: 2px 6px;
+}
+
+.accordion-container .accordion h3 {
+  margin-top: 8px;
+  padding-top: 0px;
 }
 
 #homepage-hero {

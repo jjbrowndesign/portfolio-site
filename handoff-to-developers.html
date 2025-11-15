@@ -126,10 +126,7 @@
           <h1>Handing designs off to developers</h1>
 
           <p class="subheading-accent">
-            Finding design compromises to balance business and user goals.
-          </p>
-          <p>
-            Establishing an annotation system, clarifying behaviours and animations, writing user stories, collaborating with developers to solve problems, and championing key user needs.
+            Finding design compromises to speed up development, while still meeting business and user goals
           </p>
         </div>
 
@@ -147,15 +144,22 @@
             <div class="container">
               <div class="hero-left">
                 <h2 class="h2-accent">
-                  Context
+                  About the project
                 </h2>
+                <h3>My role</h3>
+                <p>
+                  <ul>
+                    <li>Working collaboratively with developers to solve problems and find efficiencies.
+                      <li>Establishing an annotation system to help speed up development.
+                    <li>Writing acceptance criteria, in the absence of a product manager.
+                  </ul>
+                  </p>
             <h3>Time period</h3>
             <p>February 2023 – June 2024</p>
             <h3>Team</h3>
             <ul>
-              <li id="dark-accent-text">UX UI Designer (me!)</li>
-                <li>2-4 Full-Stack Developers</li>
-                  <li>1-3 Business Analysts</li>
+              <li id="dark-accent-text">UX UI designer <i>(me)</i></li>
+                <li>2-4 full-stack developers</li>
                 </ul>
             </div>
           </div>
@@ -167,25 +171,17 @@
 
           <h3>Creating true Figma components</h3>
           <p>
-            After the key designs of the website redesign project had been established (<a href="redesigning-finance-website.html">get the full story here</a>), I took the designs, recreated them using proper Figma components, <a href="creating-design-system.html">created a design system</a>, and built mockups for pages in Figma.</a>
+            After the key designs of the website redesign project were <a href="redesigning-finance-website.html">created</a>, I set up proper Figma components as part of a detailed <a href="creating-design-system.html">design system</a>.</a>
           </p>
           <h3>Writing annotations</h3>
           <p>
-            I established an annotation system as I felt it was important and efficient to clearly explain design decisions like interaction states, behaviours and animations before devs get involved, to save them time.</p>
-          </p>
-          <p><i>I can't show examples of this work due to privacy, but it was based on Femke van Schoonhoven's excellent YouTube content.</i></p>
-          <p>
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/PK8dLpwSqbw?si=ud8cL3iMxRLg-nUL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            I took time to establish an annotation system to explain design decisions like interaction states, behaviours and animations as clearly as possible, to make development as efficient as possible.</p>
           </p>
           <h3>Creating user stories</h3>
           <p>
-            I then worked with business analysts to translate these annotations into detailed user stories in Azure DevOps (similar to Jira) using Given-When-Then acceptance criteria.</p>
-            <p>Being involved in this process helped make sure that the UX team were guiding development and setting accessibility and functionality expectations for the later test and UAT phases.
-          </p>
-          <div class="learning-point"><span class="tag"><i class="fa-solid fa-graduation-cap"></i></i>Development point</span>
-            <p>I'm excited to use Figma's new Dev Mode to make this process even more detailed and efficient in future.</p>
-            </div>
-          
+            I then wrote these up as acceptance criteria in Azure DevOps using Given-When-Then structure.</p>
+            <p>This helped make sure that accessibility and functionality expectations were set for the later testing phases.
+          </p>          
         </div>
       </div>
 
@@ -193,22 +189,23 @@
                <!-- Part 2 -->
                <div class="hero-left">
                 <h2 class="h2-accent">2. Revising designs</h2>
-                <h3>Collaborating with cross-functional teams</h3>
-                <p>
-                  To keep up the pace of the project, I tried to help find design compromises to meet improve velocity while meeting business goals and championing the user (and accessibility, in particular).
+                <h3>Finding design compromises</h3>
+                <p>For me, part of a UX Designer's job is finding design compromises to keep development as fast and lean as possible.
                 </p>
-                <p>For example, we had a multi-functional dropdown that allowed users to sort an investment fund alphabetically by share class, distribution type or currency. This had been designed to be future-proof for some of our more complex funds, which had up to 15 options.
-                </p>
-                  <p>
-                    Throughout the project, I made sure to always be available for ad-hoc calls from developers.</p>
-                    <p>This time, when discussing the dropdown with a dev, he cautioned that adding this sorting functionality would take considerably longer.</p>
-                      <p>So I decided to analyse the data, and I concluded that this functionality would probably be overkill for three-quarters of the funds.
-                    <a href="https://lawsofux.com/millers-law/" target="_blank" rel="noopener noreferrer">Miller's Law</a> tells us that users can keep around 7 items in their mind at a time, so I was happy that users should be okay dealing with all funds with fewer than 7 options.</p>
-                    <p>That just left a handful of funds with more than 7 options.</p>
+                <p>For example, when a developer cautioned that adding complex sorting functionality to a component would take considerably longer, I decided to check whether it was truly necessary, at least as part of the MVP.</p>
+                <p>I analysed some data and concluded that this functionality would be overkill for three-quarters of scenarios.
+                  <div class="accordion-container">
+                    <button class="accordion">Tell me more...<i class="fa-solid fa-caret-down" aria-hidden="true"></i><i class="fa-solid fa-caret-up" aria-hidden="true"></i></button>
+                    <div class="panel" style="display: none;">
+                      <p>
+                        According to <a href="https://lawsofux.com/millers-law/" target="_blank" rel="noopener noreferrer">Miller's Law</a>, users can keep around 7 items in their mind at a time. Most scenarios had fewer than 7 options. Even the ones that had more than 7 stuck to an easily scannable pattern. So I concluded users wouldn't be overwhelmed.</p>
+                      </p>
+                    </div>
+                  </div>
 
-                    <h3>Finding design compromises</h3>
+                    <h3>Designing solutions quickly</h3>
 
-                  <p>I quickly mocked up a simplified version with no sorting, to see how it would look:
+                  <p>I quickly mocked up a simplified version with no sorting functionality, using components from the design system, to see how it would look:
                   </p>
                   <picture>
                     <source
@@ -217,19 +214,16 @@
                     src=img/ux_design/handoff_to_developers/investment_choices_before_and_after@2x.png
                     alt="The shareclass dropdown with multiple complex functionalities, and then a variant using a simple list.">
                   </picture>
-                  <p>Looking at the mockup, I was satisfied that the content looked logical, as they mostly differed only by currency which looked easily scannable for users.</p>
-                    <p>But I spoke to my UX Researcher and asked her to cover this on a usability test that we would run when the page is live.</p>
-
-                  <h3>Making informed changes</h3>
                     <p>It only took a few hours for me to create the new mockup and think through the logic, but it saved many hours of valuable developer time – and (importantly) it shouldn't have a negative impact on the user.
                     </p>
+                    <p>To make sure of this, I arranged for the component to be covered on an upcoming usability test.</p>  
               </div>
       </div>
 
       <div class="container">
         <div class="hero" id="pale-accent">
       <p class="key-points">
-        It was then my job to create a design system, complete with documentation...        </p>
+        It was then my job to complete a design system, complete with documentation...        </p>
         <a class="button-secondary" href="creating-design-system.html"
         >Next: Building the design system</a>
       </div>
