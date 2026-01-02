@@ -1,5 +1,6 @@
 :root {
   --accent300: #6e1800;
+  --accent200: #9a2b09;
   --accent150: #af3713;
   --accent120: #d14319;
   --accent: #f24e1e;
@@ -228,15 +229,6 @@ li {
   margin-left: 0em;
 }
 
-#pale-accent {
-  background-color: var(--white);
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 32px;
-  margin-top: 42px;
-  margin-bottom: 48px;
-}
-
 .gallery-img-link {
   margin-top: 20px;
   transition: all 0.3s ease 0s;
@@ -246,7 +238,7 @@ li {
 .gallery-img-link:hover {
   color: var(--accent);
   transform: translateY(-3px);
-  box-shadow: 0px 15px 20px var(--accent30);
+  box-shadow: 0px 15px 20px var(--grey40);
 }
 
 #last-child-row {
@@ -269,7 +261,7 @@ li {
   justify-content: space-between;
 }
 
-div .accordion-container {
+section .accordion-container {
   margin-top: 24px;
   background-color: var(--white);
 }
@@ -406,9 +398,16 @@ ul {
 }
 
 .hero-img {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   padding: 0px 5px 20px;
+}
+
+.hero video {
+  max-width: 800px;
+  width: 100%;
+  padding: 0px 5px 20px;
+  margin-top: 20px;
 }
 
 #before-after-img-desktop {
@@ -504,9 +503,14 @@ h4 {
 }
 
 .highlight {
-  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=dee4fc);
+  background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=d5befa);
   margin: -2px -6px;
   padding: 2px 6px;
+}
+
+.highlight a {
+  color: var(--accent200);
+  text-decoration: underline;
 }
 
 .accordion-container .accordion h3 {
@@ -558,7 +562,7 @@ p > a {
 }
 
 a:hover {
-  color: var(--accent60);
+  color: var(--black);
 }
 
 a:focus {
@@ -603,7 +607,6 @@ a.button-primary {
 
 .button-primary:active {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 a.button-secondary {
@@ -639,7 +642,6 @@ a.button-secondary {
 
 .button-secondary:active {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 #attribution {
@@ -667,19 +669,28 @@ a.button-secondary {
 
 /* Layout styling */
 
-.container {
+.content {
   padding-left: 24px;
   padding-right: 24px;
 }
 
-#pale {
-  background-color: var(--accent10);
+aside {
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  margin-top: 40px;
 }
 
-.container-centre {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
+aside h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 8px;
+}
+
+#pale {
+  background-color: var(--accent10);
 }
 
 /* ==============================
@@ -811,11 +822,6 @@ Medium devices (752px or larger)
     background-color: var(--white);
   }
 
-  .hero-text {
-    width: 67%;
-    max-width: 800px;
-  }
-
   .hero span {
     display: block;
   }
@@ -840,7 +846,7 @@ Medium devices (752px or larger)
     clear: both;
     display: table;
   }
-  .container {
+  .content {
     max-width: 1000px;
     padding-left: 24px;
     padding-right: 24px;
@@ -910,7 +916,7 @@ Large devices (1024px or larger)
         Kept when banner removed 25.01.22 */
 
   /* Layout styling */
-  .container {
+  .content {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -934,11 +940,6 @@ X-large devices (1440px or larger)
     padding-top: 84px;
   }
 
-  #pale-accent {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
   .navtoggle.responsive nav {
     padding: 0;
   }
@@ -960,6 +961,10 @@ X-large devices (1440px or larger)
     font-size: 1.2em;
   }
 
+  .hero-text {
+    max-width: 1000px;
+  }
+
   .hero-img {
     width: 100%;
     padding: 20px 5px 40px;
@@ -972,7 +977,7 @@ X-large devices (1440px or larger)
   }
 
   /* Layout styling */
-  .container {
+  .content {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redesigning a cinema listings website</title>
+
+    <link rel="canonical" href="http://jjbrowndesign.uk/redesigning-cinema-website.html" />
+
+    <link href="img/logos/favicon-accent.ico" rel="shortcut icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K7WVHH5LJ2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K7WVHH5LJ2");
+    </script>
+
+    <script src="https://kit.fontawesome.com/86faccdcc5.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Conducting an end-to-end UX process in collaboration with researchers and designers. Identifying problems with consistency, navigation and accessibility, and solving them through an agile test-and-learn cycle." />
+
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: dark)" />
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="content">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img class="logo" src="img/logos/jeremybrown_logo.svg" alt="J J Brown Design logo" />
+          </a>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="current-nav" href="case-studies.html">Case studies</a></li>
+              <li>
+                <a href="https://medium.com/@jjbrowndesign" target="_blank" rel="noopener noreferrer">Blog<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </li>
+              <li>
+                <a href="mailto:jjbrowndesign@gmail.com?subject=Getting in touch" class="button-secondary">Get in touch</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <p class="key-points"><a href="case-studies.html">← Case studies</a></p>
+        <div class="hero-text">
+          <h1>Redesigning a cinemas listings website</h1>
+
+          <p class="subheading-accent">Working as a solo UX UI Designer in a research-led product team, gathering input from across the business.</p>
+        </div>
+
+        <div>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/redesigning_cinema_website@1x.jpg media="(max-width:767px)"> <img id="single-hero-img" class="hero-img" src=img/ux_design/redesigning_cinema_website/redesigning_cinema_website@2x.jpg alt="Cinema listing website screenshots"> </picture>
+        </div>
+      </section>
+
+      <article class="content">
+        <!-- Context -->
+        <section class="hero-left">
+          <h2>About the project</h2>
+          <h3>Company</h3>
+          <p><a href="https://www.bfi.org.uk/" target="_blank" rel="noopener noreferrer">British Film Institute</a>, London</p>
+          <h3>My role</h3>
+          <ul>
+            <li>Establishing agile design processes to organise the team and to get design feedback.</li>
+            <li>Creating a flexible design system in Figma to make future design more efficient.</li>
+            <li>Learning from specialists in the business.</li>
+          </ul>
+
+          <h3>Time period</h3>
+          <p>Nov 2024 - March 2025</p>
+          <h3>Team</h3>
+          <ul>
+            <li>Lead product manager</li>
+            <li>Product manager</li>
+            <li>UX researcher</li>
+            <li id="dark-accent-text">UX UI designer <i>(me)</i></li>
+            <li>Content designer</li>
+          </ul>
+
+          <h3>Problem</h3>
+          <p>The BFI had committed to becoming more digital-first and wanted to try out a proper UX process to address user complaints about their cinema website.</p>
+          <h3>Opportunity</h3>
+          <p>There's only one UX designer and one researcher covering the whole business, so there's an opportunity to set up a design system to establish reusable components and to help define a stylish brand identity for digital.</p>
+        </section>
+
+        <!-- Part 1 -->
+        <section class="hero-left">
+          <h2>1. Listening to customer complaints</h2>
+          <h3>Speaking to the audience insights team</h3>
+          <p>When I joined, my colleagues had just completed research into the needs of 16 loyal visitors of our cinemas.<span class="highlight">One of the clearest pain points seemed to be a difficulty finding film information with minimal clicks.</span></p>
+          <p>So we read the results of a regular audience survey to learn more about the issue.</p>
+          <p>There’s nothing more humbling than reading customer complaints, but it’s very helpful! Feedback ranged from the constructive (“I really lack images in the list of movies” and “It’s not easy to find show times”) to the gloriously provocative:</p>
+          <p><b>"It’s a TERRIBLE website all around! The design, functionality and UX are maddeningly bad!”</b></p>
+          <h3>Unhelpful film information</h3>
+          <p>Evaluating the comments, it felt like the problem was about structure and consistency.</p>
+          <p><span class="highlight">If you browse by date, the site lists all the available showtimes, but with no images or descriptions to entice the users to see the films</span>:</p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/film_listings.png media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max" src=img/ux_design/redesigning_cinema_website/film_listings.png alt="A screenshot of a webpage offering an uninspiring, functional list of three films, with no imagery or film descriptions."> </picture>
+          <p><span class="highlight">But, if you browse by collection, the site gives attractive imagery and intriguing descriptions, but forces you to click into each and every film page to find the showtimes</span>:</p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/collection_listing.png media="(max-width:767px)"> <img class="case-study-img" id="case-study-img-max" src=img/ux_design/redesigning_cinema_website/collection_listing.png alt="A screenshot of a webpage showing two films categorised under the title ‘New releases’, with compelling images but no showtimes listed."> </picture>
+
+          <p>Users clearly wanted a way to get the best of both worlds, and <span class="highlight">so I designed the ‘showcard’: a component that combines images, titles, showtimes and more.</span> To be used consistently throughout the site.</p>
+
+          <h3>Validating the design</h3>
+          <p>I encouraged the research team to cover users who hadn't come to our venue before, alongside the loyal 'frequent bookers', as I thought it was important to conduct research with potential new customers.</p>
+          <p>
+            <span class="highlight">I suggested we test two versions – one 'Extra Small' card with minimal detail, and one 'Extra Large' card with a huge amount of detail to see what interests users about each.</span>
+          </p>
+          <p>I set up two interactive prototypes in Figma. I made sure to include some realistic film content to see if it overwhelmed users:</p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/showcard-xs-vs-xl.jpg media="(max-width:767px)"> <img class="case-study-img" src=img/ux_design/redesigning_cinema_website/showcard-xs-vs-xl.jpg alt="The first iteration of the showcard, with space for a film title, director, runtime and dates."> </picture>
+          <p>
+            <span class="highlight">Ultimately, users liked the detail of the XL cards, especially the inclusion of the runtime, synopsis and year. But they preferred the way the XS cards were 'collapsed' by default and could then be clicked to reveal the upcoming showtimes.</span>
+          </p>
+          <p>Gratifyingly, both these cards performed well throughout the site.</p>
+        </section>
+
+        <!-- Part 2 -->
+        <section class="hero-left">
+          <h2>2. Learning from the data</h2>
+          <h3>Slow same-day booking</h3>
+          <p>Another comment from our user research caught my attention:</p>
+          <p><b>"If I want to just look at a glance what films are on that day at the BFI Southbank, it’s easier to look at Google.”</b></p>
+          <p>On the current site, to book a ticket for the same day, users must hunt down a small, tucked-away calendar tool – awkwardly placed over to the right on desktop, and sometimes hidden at the bottom of the page on mobile.</p>
+          <p>I checked a PowerBI report, which confirmed our suspicions: <span class="highlight">half of all bookings happen within a week of the screening, and almost a quarter are for screenings on the same day:</span></p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/booking_patterns_southbank.png media="(max-width:767px)"> <img class="case-study-img" src=img/ux_design/redesigning_cinema_website/booking_patterns_southbank.png alt="A bar chart showing 23% of bookings are for the same day, and another 27% are within the rest of the week."> </picture>
+          <h3>Prioritising quick booking</h3>
+          <p>Our design response was to test buttons for ‘Today’, ‘Tomorrow’ and the rest of the week, along with a carousel highlighting that day’s films and events on the homepage:</p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/whats_on_today_tomorrow.jpg media="(max-width:767px)"> <img class="case-study-img" src=img/ux_design/redesigning_cinema_website/whats_on_today_tomorrow.jpg alt="A webpage design showing quick buttons for Today, Tomorrow, and so on, plus a carousel of all the films and events running on that day."> </picture>
+          <p><span class="highlight">These buttons proved hugely successful in our testing,</span> with most users gravitating towards them and all users ultimately reporting that they were satisfied with the ease of booking a film.</p>
+        </section>
+
+        <!-- Part 3 -->
+        <section class="hero-left">
+          <h2>3. Prioritising the BFI's unique selling points</h2>
+          <h3>Seasons</h3>
+          <p>A highlight of our Discovery process was a workshop we held with the team who pick the films. It was especially inspiring to see their passion for film and, in particular, to learn how important 'Seasons' were to the BFI.</p>
+          <details class="accordion-container">
+            <button class="accordion">What are Seasons?<i class="fa-solid fa-caret-down"></i><i class="fa-solid fa-caret-up"></i></button>
+            <summary class="panel">
+              <p>Seasons are curated collections of films (or TV), organised by genre, theme, actor or director. Each one normally runs for a month.</p>
+              <p>For example, a Ridley Scott season which featured some of the director's best films.</p>
+            </summary>
+          </details>
+          <p>It was a similar story when I caught up with the Brand team. These are the creative masterminds behind our iconic posters and artwork, so they know a thing or two about the importance of Seasons to the BFI’s brand.</p>
+          <p>
+            It felt like Seasons were being let down slightly on the current site, as <span class="highlight">they were hidden behind an unexciting ‘Find out more’ link, increasing the <a href="https://www.nngroup.com/articles/interaction-cost-definition/" target="_blank" rel="noopener noreferrer">interaction cost</a> and relying too heavily on users knowing our programme structure and terminology.</span>
+          </p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/seasons.png media="(max-width:767px)"> <img class="case-study-img" src=img/ux_design/redesigning_cinema_website/seasons.png alt="A screenshot of the current website, with a ‘Find out more’ button that takes users through to a list of Seasons."> </picture>
+          <p>So I applied the old scriptwriting adage of “Show, don’t tell”; I pulled a few of the top upcoming seasons straight on to the homepage and, for each season, I showcased some of the films that would be part of it.<span class="highlight"> Finally, instead of simply listing season names, we were inviting users to discover more.</span></p>
+          <p>I also negotiated with the Brand team to define an improved visual design style to be used across BFI sites.</p>
+          <picture> <source srcset=img/ux_design/redesigning_cinema_website/new_seasons_carousel@2x.jpg media="(max-width:767px)"> <img class="case-study-img" src=img/ux_design/redesigning_cinema_website/new_seasons_carousel@2x.jpg alt="A screenshot of the new design of a Sidney Poitier season carousel, with example films underneath an eye-catching Sidney Poitier artwork."> </picture>
+          <p>Suddenly, some of the most unique and exciting parts of our programme were being brought to life.</p>
+        </section>
+      </article>
+
+      <!-- CTA to other case study-->
+      <aside>
+        <h2>Read another case study</h2>
+        <p>Design Systems that lead to efficient design and development are my passion. I've created another one before...</p>
+        <a class="button-secondary" href="creating-design-system.html">Next: Creating a Design System</a>
+      </aside>
+    </main>
+
+    <footer>
+      <!-- Contact section -->
+      <section class="content" id="footer-content">
+        <p id="attribution">Site coded by me using HTML, CSS and Javascript!</p>
+
+        <!-- LinkedIn icon link -->
+
+        <a href="https://linkedin.com/in/jjbrowndesign" target="_blank" rel="noopener noreferrer">
+          <img class="social" src="img/social_icons/icons8-linkedin.svg" alt="Find me on LinkedIn" />
+        </a>
+
+        <!-- Medium link -->
+
+        <a href="https://medium.com/@jjbrowndesign" target="_blank" rel="noopener noreferrer">
+          <img class="social" src="img/social_icons/icons8-medium.svg" alt="Read my blog on Medium" />
+        </a>
+
+        <p id="attribution">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
